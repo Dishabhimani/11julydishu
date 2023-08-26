@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <fieldset>
+        <lebal for="name">Name:</lebal>
+        <input type="text" name="name" id="" placeholder="Name">
+        <br><br>
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" id="" placeholder="password" required minlength="6" maxlength="8" pattern="[0-9, A-Z, a-z, @]{6,8}">
+        <br><br>
+        <label for="gen">Gender:</label>
+        Mail<input type="radio" name="gen" id="">
+        Femail<input type="radio" name="gen" id="">
+        Other<input type="radio" name="gen" id="">
+        <br><br>
+        <label for="mail">Email:</label>
+        <input type="mail" name="mail" id="" placeholder="Email">
+        <br><br>
+        <label for="phone">Phone No:</label>
+        <select name="phone" id="" tital="country codes">
+            <option value="1">+1</option>
+            <option value="93">+93</option>
+            <option value="91" selected>+91</option>
+            <option value="255">+255</option>
+            <option value="213">+255</option>
+            <option value="672">+672</option>
+        </select>
+        <input type="tel" name="phone" id="" required minlength="10" maxlength="10" pattern="[0-9,{10}]">
+        <br><br>
+        <input type="submit" name="" id="" value="submit" onclick="alert( 'yoyr form is submitted')">
+        
+    </fieldset>
+    
+</body>
+</html>
