@@ -1,0 +1,11 @@
+/* Element selector */
+h1{
+    text-align: center;
+}
+img{
+    height: 400px;
+    width: 100%;
+}
+p{
+    color: lightgray !important;
+}
