@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-Element</title>
+    <style>
+        div{
+            height: auto;
+            width: 100%;
+            border: 1px solid red;
+            padding: 50px 10px 30px 0px;
+            padding: 30px 100px;
+        }
+        div p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div p::first-letter{
+            font-size: 32px !important;
+        }
+        div p::first-line{
+            color:blue;
+        }
+        ::selection{
+            background: lightgray;
+            color: coral;
+        }
+        div p::before{
+            margin: 50px;
+            content:"hello"
+            /* color: red;
+            border: 1px solid red; */
+            
+        }
+        div p::after{
+            content: "";
+            color: red;
+            border: 1px solid red;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, alias placeat temporibus itaque in facilis? Pariatur aspernatur, sed nihil odio facere autem sit atque maxime ad ex, tempore sunt reprehenderit, labore molestias rem? Culpa quasi ipsam rem. Accusantium mollitia magni omnis. Exercitationem quas laboriosam maiores.
+        </p>
+    </div>
+</body>
+</html>
