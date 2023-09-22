@@ -1,0 +1,21 @@
+List Tag is use  to create the list.
+Types:-
+1) Unordered List
+->Used when you don't want to arrange the list into order formate
+<ul></ul> -> Unordered List
+<li></li> -> List Item
+
+2) Ordered List
+-> Used for arranging a numbered list in ascending or descending manner
+<ol></ol> -> Ordered List
+<li></li> -> List Item
+
+3) Data List:-
+-> It's used to display data and their definition
+<dl><dl> -> data list
+<dt></dt> -> Data Term
+<dd></dd> -> Data Definition\
+
+attribute:-
+-> To add attribute to an element we can use "class" and "id".
+-> list style
