@@ -1,0 +1,12 @@
+In a three ways we can apply the css
+
+1.Inline
+-> Apply using style attribute in start tag
+-> Inline is most important.
+
+2.Internal
+-> Apply using style tag in head tag
+
+3.External
+-> Create the CSS file using .css extension and Apply it into HTML file using href attribute in link tag. 
+-> According to W3c external css is is more ideal than inline or internal.
