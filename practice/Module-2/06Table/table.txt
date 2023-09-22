@@ -1,0 +1,14 @@
+Table is use to arrange the data in tabular formate
+
+Element:-
+<table></table> -  is the main element to create the table
+<tr></tr> - Table row
+<td></td> - table data
+<th></th> - table heading
+<caption></caption> - USe to give description about the table
+<thead></thead> - Table Head
+<tbody></tbody> - Table Body
+<tfoot></tfoot> - Table Footer
+
+attribute:-
+border
