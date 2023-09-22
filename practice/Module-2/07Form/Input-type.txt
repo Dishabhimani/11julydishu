@@ -1,0 +1,21 @@
+text
+password
+email
+tel
+number
+search
+radio
+check box
+reset
+submit
+date
+time
+week
+month
+date time
+date time local
+file
+image
+url
+Button
+color

@@ -1,0 +1,10 @@
+Form:
+
+Elements:
+<fieldset> - Use to apply the border to the Form
+<legend> - Use to give name 
+<form> - Use to define the form 
+<Label> - Use apply label to the input
+<input> - Use to take the input from the user
+
+Attribute:
