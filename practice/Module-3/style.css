@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.info{
+    height: auto;
+    width: 60%;
+    /* border: 1px solid red;*/
+    background: #eee;
+    float:left;
+    padding: 5px;
+}
+.info h1{
+    font-size: 42px;
+}
+.info p{
+    font-size: 20px;
+}
+.info .data{
+    height: 250px;
+    width: 100%;
+}
+.info .data .data-img{
+    width: 30%;
+    /* border: 1px solid red; */
+    float: left;
+
+}
+.info .data .data-img img{
+    height: 80%;
+    width: 100%;
+
+}
+.info .data .data-img button{
+    height: 20%;
+    width: 100%;
+    background: #0bf;
+    border: none;
+
+}
+.info .data .data-info{
+ height: auto;
+ width: 60%;
+ float: left;
+}
+.info .data .data-info p{
+    margin-left: 20px;
+}
+.info .data .data-info p span{
+    margin: 50px;
+}
+/* ----------------List start----------------- */
+.list{
+    height: auto;
+    width: 40%;
+    /* border: 1px solid #f00;  */
+    float: left;
+    padding: 10px;
+    background: #eee;
+
+}
+.list button {
+    height: 30px;
+    width: 25%;
+    background: #eee;
+}
+.list button:first-child {
+    border-bottom: none;
+    
+    
+}
+.list ul{
+    background: #fff;
+    border: #666 1px solid;
+    height: auto;
+    width: auto;
+}
+.list ul li{
+    list-style: none;
+    margin: 5px;
+    padding: 15.7px;
+    border-bottom: 1px solid #666;
+}
+.list ul li:last-child{
+    border: none;
+}
