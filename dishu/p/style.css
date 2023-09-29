@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 700px;
+  width: 100%;
+  background-image: url(../Tops/Desktop/img\ 1.avif);
+  background-size: 100% 700px;
+  position: fixed;
+  top: 0;
+}
+.logo h2{
+    height: 40px;
+    width: 15%;
+margin-left: 5%;
+    margin-top: 20px;
+    padding: 0px 60px 0px 0px;
+    float:left;
+
+}
+a{
+   color:BLACK;
+    text-decoration: none;
+}
+.menu ul{
+    height: 70px;
+    padding:0px 0px 0px 50px;
+float:right;
+}
+
+.menu ul li
+{
+    list-style: none;
+    display: inline;
+    padding: 20px;
+    color:black;
+    font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    line-height: 4;
+}
+.banner-text{
+    height: auto;
+    width: auto;
+    padding: 5px;
+    font-style:oblique;
+    color: white;
+    position: absolute;
+    top: 0%;
+    font-style: oblique;
+}
+.banner-text h4{
+    position: relative;
+    left: 500px;
+    top: 100px;
+    padding: 30px;
+    font-size: 80px;
+}
+.banner-text p{
+    position: relative;
+    left: 500px;
+    top: 101px;
+    font-size: 15px;
+}
+.banner-text button{
+    position: relative;
+    left: 800px;
+    top: 80px;
+}
+button{
+    border-radius:2px;
+    width:90px;
+    background-color: white;
+    color:black;
+    height: 30px;
+}
+.scroll
+{
+padding-bottom:80%;
+}
