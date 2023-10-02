@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.info{
+    background-image: url(https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=);
+    background-repeat: no-repeat;
+    height: 100%;
+    height:550px;
+    background-size: cover;
+    background-position: center;
+}
+.info h4{
+    font-size: 100px;
+    padding: 30px;
+    left: 350px;
+    top: 30px;
+    position: relative;
+}
+.info p{
+    font-size: 20px;
+    position: relative;
+    left:0px;
+    right: 00px
+    ;
+
+}
+.info h1{
+    font-size: 20px;
+    position: relative;
+    left: 270px;
+    right: 20px;
+}
+.info button{
+    position: relative;
+    left: 700px;
+    bottom: 40px;
+    width: 90px;
+}
+
+a{
+    color:BLACK;
+     text-decoration: none;
+ }
+ .menu ul{
+     height: 10px;
+     padding:0px 0px 0px 0px;
+     float: right;
+     margin-bottom: ;
+
+ 
+ 
+ }
+ 
+ .menu ul li
+ {
+     list-style: none;
+     display: inline;
+     padding: 10px;
+     color:black;
+     font-weight: 600;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 20px;
+     /* margin-bottom: 980px; */
+     /* line-height:normal; */
+     
+}
+    
