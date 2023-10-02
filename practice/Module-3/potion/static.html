@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static</title>
+    <link rel="stylesheet" href="">
+    <style>
+        .original{
+        height: 500px;
+        width: 100%;
+        border: 3px solid red;
+        background: coral;
+        }
+        .static{
+            height: 150px;
+            width: 500px;
+            border: 3px solid navy;
+            background: powderblue;
+            position: sticky;
+            top: 50px;
+            left: 50px;   
+         }
+         .d{
+            height: 100vh;
+            text-align: right;
+         }
+         i{
+            font-size: 52px;
+         }
+        </style>
+</head>
+<body>
+    <!-- static is by default position of the element so can't change the position of element -->
+    <div class="original"></div>
+    <div class="static"></div>
+    <div class="original d">
+        <i class="fa-solid fa-truck-fast fa-bounce"></i>
+    </div>
+</body>
+</html>

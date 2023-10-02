@@ -1,0 +1,54 @@
+<!--  Relative is used for the parent and Absolute  is used for the child using relative absolute we can set every chiled inside the parent potion. by defalt every chiled is absolute with the body if there's no potion relative. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relative-absolute</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* border: 2px solid red */
+    }
+    .banner{
+        height: 500px;
+        width: 100%;
+        position: relative;
+
+    }
+    .banner .ban{
+        height: inherit;
+        width: inherit;
+        position: absolute;
+    }
+    .banner .ban-img img{
+        height: 100%;
+        width: 100%;
+        filter: brightness(40%);
+    }
+    .banner .ban-info{
+        font-size: 20px;
+        color: #fff;
+        width: 50%;
+        height: 50%;
+        top: 25%;
+        left: 25%;
+        text-align: justify;
+    }
+</style>
+</head>
+<body>
+    <!-- Relative -->
+    <div class="banner">
+        <div class="ban ban-img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/IMG_logo_%282017%29.svg" alt="">
+        </div>
+        <div class="ban ban-info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia reiciendis blanditiis vero pariatur quidem nostrum eius natus saepe libero rerum?</p>
+        </div>
+    </div>
+</body>
+</html>
+
