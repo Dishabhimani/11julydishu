@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    /*  element selector :: pseudo element */
+    p::first-letter{
+        margin-left: 25px;
+    }
+    .item{
+        height: 400px;
+        width: 50%;
+        border: 1px solid black;
+        background:lightblue;
+        float: left;
+    }
+    .i-1{
+        float: left;
+}
+    .i-2{
+        float: left;
+        clear: left;
+    }
+    .i-3{
+        float: left;
+        clear: both;
+    }
+    .i-4{
+        float: right;
+        clear: left;
+    }
+    .i-5{
+        float: left;
+        margin: auto;
+        clear: right;
+    }
+</style>
+<body>
+<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nihil autem asperiores molestiae dolor deserunt, cumque veritatis vel sed velit minima eius ipsa maxime, perferendis saepe quam, placeat illum itaque.</p> -->
+
+    <!--div.item.i-${$}*5-->
+    <div class="item i-1">1</div>
+    <div class="item i-2">2</div>
+    <div class="item i-3">3</div>
+    <div class="item i-4">4</div>
+    <!-- <div class="item i-5">5</div> -->
+</body>
+</html>
