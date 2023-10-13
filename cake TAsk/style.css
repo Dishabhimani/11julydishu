@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 350px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid red;
+    text-align: center;
+    padding-top: 150px;
+}
+.main .info h2{
+    font-style: oblique;
+    font-size: 50px;
+    color: orange;
+    font-weight: 900;
+}
+.main .info .content p{
+     font-size: 70px;
+     color: black;
+     font-weight: 690;
+}
+/* /* ---------------------------------------------------------- */
+.data{
+    height: 500px;
+    width: 50%;
+    border: 1px solid black;
+    float: left;
+    
+}
+.data img{
+    height: 500px;
+    width: 673px;
+    /* float: left; */
+
+}
+/* ---------------------------- */
+.container{
+    height: 500px;
+    width: 100%;
+    border: 1px solid rgb(19, 10, 11);  
+
+}
+.container text{
+    /* clear: both; */
+    float: right;
+    
+
+}
+.container .input nav{
+    clear: both;
+    float: left;
+}
+.container .input data{
+    clear: both;
+}
+
+
+
+
+
+
