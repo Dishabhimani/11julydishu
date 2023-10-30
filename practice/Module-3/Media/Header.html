@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .header{
+            width: 100%;
+            height: 100%;
+            background: lightblue;
+            font-size: 25px;
+            display: flex;
+
+        }
+        .header .bar {
+            height: auto;
+            width: 100%;
+            text-align: right;
+            display: none;
+        }
+        .header .menu{
+            height: inherit;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid red;
+        }
+        .header ul li{
+            list-style: none;
+            display: inline;
+            padding: 0 15px;
+
+        }
+        @media(max-width: 500px){
+            .header .bar{display: block;}
+            .header .menu{display: none;}
+S        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
