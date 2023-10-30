@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            height: 70px;
+            width: 100%;
+            /* border: solid red; */
+            position: relative;
+        }
+
+        .header .logo {
+            height: inherit;
+            width: 18%;
+            /* border: solid red; */
+            position: absolute;
+        }
+
+        .header .logo img {
+            height: 100%;
+            width: 100%;
+        }
+        .header .bar{
+            
+        }
+        /* header menu */
+        .header .menu {
+            height: inherit;
+            width: 82%;
+            /* border: solid red; */
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .header .menu ul {
+            height: 100%;
+            width: 100%;
+            text-align: right;
+            line-height: 70px;
+        }
+
+        .header .menu ul li {
+            list-style: none;
+            display: inline;
+            margin: 0 20px;
+            padding: 15px 30px;
+        }
+
+        .header .menu ul li:hover {
+            background: red;
+            color: #fff;
+        }
+
+        .header .menu ul li a {
+            font-size: 20px;
+            color: red;
+            text-decoration: none;
+        }
+
+        .header .menu ul li:hover a {
+            color: #fff;
+        }
+/* Sub header */
+        .header .menu ul .sub-menu {
+            height: auto;
+            width: auto;
+            position: relative;
+        }
+
+        .header .menu ul .sub-menu .thali {
+            height: auto;
+            width: auto;
+            position: absolute;
+            text-align: center;
+            top: 48px;
+            left: 0px;
+            display: none;
+            z-index: 5;
+            backdrop-filter: blur(50px);
+            -webkit-backdrop-filter: blur(50px);
+            -o-backdrop-filter: blur(50px);
+            -moz-backdrop-filter: blur(50px);
+        }
+
+        .header .menu ul .sub-menu .thali li {
+            display: block;
+            width: 100%;
+            padding: 0 15px;
+            margin: 0;
+        }
+        .header .menu ul .sub-menu:hover .thali {
+            display: block !important;
+        }
+
+        .header .menu ul .sub-menu:hover .thali li a {
+            color: red;
+        }
+        .header .menu ul .sub-menu:hover .thali li:hover a{
+            color: #fff;
+        } 
+/* Banner  section*/
+        .banner_section {
+            height: 500px;
+            width: auto;
+            /* border: 1px solid red; */
+            position: relative;
+        }
+        .banner_section .h2{
+            height: auto;
+            width: 50%;
+            padding: 20px;
+            font-size: 52px;
+            font-weight: 900;
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 22%;
+            left: 0%;
+            color: #fff;
+            text-align: left;
+        }
+        .banner_section .h2 button{
+            height: auto;
+            width: auto;
+            padding: 15px;
+            border: none;
+            border-radius: 50px;
+            background-color: rgba(255, 0, 5, 1);
+            color: #fff;
+            transition: 1s;
+        }
+        .banner_section .h2 button:hover{
+            background-color: rgba(255, 0, 5, 0.5);
+        }
+        .banner_section img{
+            height: 100%;
+            width: 100%;
+
+        }
+/* Menu */
+        
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <!-- header logo -->
+        <div class="logo">
+            <img src="https://i.pinimg.com/originals/4e/95/ff/4e95ff2406e7914e70cbbba6dd9c51d2.jpg" alt="">
+        </div>
+        <div class="bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <!-- Header Menu -->
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="sub-menu"><a href="#">Menu <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="thali">
+                        <li><a href="#">Gujarati</a></li>
+                        <li><a href="#">Punjabi</a></li>
+                        <li><a href="#">South Indian</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">FeedBack</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Banner -->
+    <div class="banner_section">
+        <div class="h2">
+            <h2>Lorem, ipsum dolor.</h2>
+            <button>Learn More</button>
+        </div>
+        <img src="https://p.w3layouts.com/demos_new/template_demo/09-10-2018/cookie-demo_Free/1136721386/web/images/banner1.jpg" alt="">
+    </div>
+    <!-- Menu -->
+    <div class="menu">
+        <hgroup>
+            <p>Menu and Pricing</p>
+            <h3>Explore Our Thalis</h3>
+        </hgroup>
+    </div>
+</body>
+
+</html>

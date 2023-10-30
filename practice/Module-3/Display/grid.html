@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .box {
+            height: 500px;
+            width: 100%;
+            border: 1px solid red;
+            display: grid;
+            /* grid-template-rows: 150px 150px ;
+            grid-template-columns: 150px 150px 150px; */
+            /* grid-template-rows: 70px 200px 150px;
+            grid-template-columns: 50px 150px 300px; */
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 3fr);
+            /* grid-template-columns: 1fr 2fr 4fr; */
+            justify-content: center;
+            /*To grid box item horizontally*/
+            /*justify-items: center; To set item horizontally
+            align-items: center; To set item vertically */
+            align-content: center;
+            /*To grid box item vertically*/
+        }
+
+        .box .item {
+            /* height: 120px;
+            width: 120px; */
+            background: lightblue;
+            border: 3px solid navy;
+            margin: 5px;
+        }
+
+        @media (max-width: 700px) {
+            .i-1 {
+                /*grid-column: span 3;*/
+                /* grid-row-start: ;
+            grid-column-start: ;
+            grid-row-end: ;
+            grid-column-end: ; */
+                grid-area: 2 / 1 / 4 / 3;
+                background: lightsalmon !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="item i-1">1</div>
+        <div class="item i-2">2</div>
+        <div class="item i-3">3</div>
+        <div class="item i-4">4</div>
+        <div class="item i-5">5</div>
+    </div>
+</body>
+
+</html>
