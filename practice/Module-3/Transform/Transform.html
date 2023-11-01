@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            border: 3px solid navy;
+            background: lightblue;
+            margin: 5px auto;   /* Left-Right Center */
+            transition: 2.5s;
+        }
+        .transform:hover {
+            background: rgba(173, 216, 230, 0.582);
+            /* transform: rotate(90deg); */
+             /* transform: scale(1.5, 1.5);    */
+             /* (zoom hover) */
+            /* transform: skew(-50deg, 0deg); */
+            /* transform: translate(150px, 50px); */
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="original">original</div>
+    <div class="transform">transform</div>
+</body>
+</html>
