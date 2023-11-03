@@ -13,8 +13,9 @@
         .header{
             height: 70px;
             width: 100%;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             position: relative;
+            background-color: rebeccapurple;
 
         }
         .header .logo {
@@ -42,92 +43,139 @@
         .header .menu ul li a{
             text-decoration: none;
             font-size: 30px;
-            color: red;
-        }
+            color: red;}
+            /* ------------------------------------------------------- */
+            /* sub header  */
+            .header .menu ul .sub-menu {
+                height: auto;
+                width: auto;
+                position: relative;
+                /* background: wheat; */
+            }
+            .header .menu ul .sub-menu .product {
+                height: auto;
+                width: auto;
+                position: absolute;
+                text-align: center;
+                top: 48px;
+                left: 0px;
+                display: none;
+                background: white;
+ }
+            .header .menu ul .sub-menu .product li {
+                 display: block;
+                 width: 100%;
+                 padding: 0 15px;
+                 margin: 0;
+            }
+            .header .menu ul .sub-menu:hover .product {
+                   display: block;
+            }
+            .header .menu ul .sub-menu:hover .product li a{
+                color:black;
+            }
+            .header .menu ul .sub-menu:hover .product li:hover a{
+                color: #a00c67;
+            }
+
+        
         /* ----------------------------- */
-        .container{
-            height: auto;
-            width: auto;
-        }
-        .container img{
-            height: 200px;
-            width: 140px;
-            float: left;
-            clear: both;
+        .icons-container{
+            height: 150px;
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            align-items: center;
 
-            
-
+        }
+        .icons-container .icons{
+        
+            /* border: 1px solid red; */
+        }
+        .icons-container .icons img{
+            height: 150px;
+            width: 168px;
             
         }
-        .container p{
-            font-size: 40px;
-            list-style: none;
-            color: black;
-            clear: both;
-            float: left;
-        }
-        .container a{
+        .icons-container .icons a{
+        
             text-decoration: none;
+
         }
-        /* ------------------------------ */
+        .icons-container .icons p{
+            font-weight: bold;
+            color: black;
+            font-size: 20px;
+            text-align: center;
+            /* border: 1px solid red; */
+            background: burlywood;
+            
+            }
+
+        /* ------------------------------------------------------------------------------ */
         .data{
             height: auto;
             width: auto;
+            border: 1 px solid red;
         }
         .data img{
-            height: 200px;
-            width: 140px;
-            clear: right;   
-    
-            
-            clear: right;
-            float: left;
-    
-        
-            
-            
-
-
+            margin-top: 14px;
+            height:auto ;
+            width: 100%;
         }
-         .data p{
-            font-size: 40px;
-            list-style: none;
-            color: black;
-            clear: right;
-
-            
-            /* clear: right; */
-            float: left;
-
-        
-
-
-         }
-         .data a{
-            text-decoration: none;
-         }
-          /* ---------------------------------- */
-          .nav{
-            height: auto;
-            width: auto;
-         }
-         .nav img{
-            height: 200px;
-            width: 140px;
+ /* ----------------------------------------------------------------------------------- */
+       .text{
+        height: auto;
+        width: auto;
+        /* border: 1 px solid red; */
     
+       }
+       .text p{
+        font-size: 40px;
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
+       .text a{
+        text-decoration: none;
+       }
+    /* ----------------------------------------------------------------------------------------- */ 
+    .phone-pay{
+            height: 400px;
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            /* align-items: center; */
+            transition: 1.5s;
+    }
+    .phone-pay .pay{
         
+        /* border: 1px solid red; */
+    }
+    .phone-pay .pay img{
+        height: 350px;
+        width: 335px;
+        /* transform: scale(1.5,1.5); */
+        
+    }
+    /* .phone-pay:hover :first-child{ */
+                /* transform: scale(1.5,1.5); */
+
+
+    }
+    .phone-pay .pay a{
     
+        text-decoration: none;
+
+    }
+    .phone-pay .pay p{
+        font-weight: bold;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        /* border: 1px solid red; */
+        /* background: burlywood; */
         
-         }
-         .nav p{
-            font-size: 40px;
-            list-style: none;
-            color: black;
-            
-         }
-         .nav a{
-            text-decoration: none;
-         }
+    }
     </style>
 </head>
 <body>
@@ -140,32 +188,138 @@
     <div class="menu">
         <ul>
             <li><a href="#">become seller</a></li>
-            <li><a href="#">sing in</a></li>
+            <!-- <li><a href="#">sing in</a></li> -->
             <li><a href="#">cart</a></li>
+            <li class="sub-menu"><a href="#">sing in</a>
+                <ul class="product">
+                  <li><a href="#">MyProfile</a></li>
+                  <li><a href="#">Flipkartpluszone</a></li>
+                  <li><a href="#">Orders</a></li>
+                  <li><a href="#">Wishlist</a></li>
+                  <li><a href="#">Rewards</a></li>
+                  <li><a href="#">Gift cards</a></li>
+                  
+
+
+     </ul>
         </ul>
        </div>
+    </div>
        <!-- ------------------------------------------------- -->
-
-    <div class="container">
+     <section class="icons-container">
+    <div class="icons">
         <a href="https://www.flipkart.com/">
             <img src="https://cdn.vectorstock.com/i/preview-1x/34/12/grocery-delivery-filled-colorful-logo-vector-48403412.jpg" alt="">      
-        <p>Grocery</p>
-       </div>
-    <div class="data">
+    <div class="info">
+           <p>Grocery</p>
+           </div>  
+           </div>
+    
+    <div class="icons">
            <a href="https://www.flipkart.com/">
             <img src="https://images.glowroad.com/faceview/hb/jd/bj/c9b/imgs/2e71ce83-bed5-4d59-9221-975e64500d07_21199371-xlgnm400x400.jpg" alt="">
-        <p>Mobile</p>
-        </a>
-        </div>
-    <div class="nav">
+    <div class="info">  
+           <p>Mobile</p>
+           </a>
+    </div>
+    </div>
+      
+    <div class="icons">
             <a href="https://www.flipkart.com/">
              <img src="https://t4.ftcdn.net/jpg/00/30/42/27/360_F_30422752_w1SUKUMnnAzhgYSNd01A1oXSYncJizkU.jpg" alt="">
-         <p>Travel</p>  
-        </a>  
-        </div>
-       
+             <div class="info">
+            <p>travel</p>  
+            </a>
+    </div>
+    </div>
+    <div class="icons">
+        <a href="https://www.flipkart.com/">
+         <img src="https://dukaan.b-cdn.net/700x700/webp/media/0a1d2a66-c4fc-48ef-84c6-507422f84ca6.jpg" alt="">
+         <div class="info">
+        <p>Electonics</p>  
+    </a>
+    </div>
+</div>
+<div class="icons">
+    <a href="https://www.flipkart.com/">
+     <img src="https://t4.ftcdn.net/jpg/02/62/24/31/360_F_262243135_q7xBjfg02gaeD1NVfIqHBLz3qrOMFYcw.jpg" alt="">
+     <div class="info">
+    <p>Fashion</p>  
+</a>
+</div>
+</div>
+<div class="icons">
+    <a href="https://www.flipkart.com/">
+     <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmVhdXR5fGVufDB8fDB8fHww" alt="">
+     <div class="info">
+    <p>Beauty</p>  
+</a>
+</div>
+</div>
+<div class="icons">
+    <a href="https://www.flipkart.com/">
+     <img src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/dedab726-acad-43e2-a33f-64ee4dec5b77._CR0,0,1200,628_SX430_QL70_.jpg" alt="">
+     <div class="info">
+    <p> Home & kitchen</p>  
+</a>
+</div>
+</div>
+<div class="icons">
+    <a href="https://www.flipkart.com/">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp9cN278nXQ3TSdWCyZ5PoLMQxHpv92USzZQ&usqp=CAU" alt="">
+     <div class="info">
+    <p>Furniture</p>  
+</a>
+</div>
+</div>
 
-
+ </section>
+ 
+ <!-- ------------------------------------------------------------------------------------- -->
+ <section class="data">
+    <div class="data">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/01d585fee99375e8.png?q=20" alt="">
+    </div>
+ </section>
+<!-- -------------------------------------------------------------------------------------- -->
+<section class="text">
+    <div class="text">
+        <a href="#"><p>Best Mobile</p></a>
+    </div>
+</section>
+<!-- ----------------------------------------------------------------------------------------- -->
+<section class="phone-pay">
+    <div class="pay">
+                <a href="https://www.flipkart.com/">
+                    <img src="https://www.buyitdirect.ie/Images/SM-S901BIDDEUB_1_Supersize.png?width=650&height=650&v=3" alt="">      
+                 <div class="nav">
+                   <p>Samsung S22 5G</p>
+                   </div>  
+                </div>
+    <div class="pay">
+                    <a href="https://www.flipkart.com/">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsiXxtP2VyaseYCW6k1ZA6TCaD1oPX0U8EvQ&usqp=CAU" alt="">      
+                     <div class="nav">
+                       <p>Realme 11pro 5G</p>
+                       </div>  
+                    </div>
+    <div class="pay">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://cdn.salla.sa/ZdnoW/vcwhqjmhCICuWkezx9NzNfu56IC5RgZjvLDlrh8e.jpg" alt="">      
+                         <div class="nav">
+                           <p>Redmi 12</p>
+                           </div>  
+                        </div>
+    <div class="pay">
+                            <a href="https://www.flipkart.com/">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq1wPYXBH9otqHc02myG3yWeYqsVumGBr-KA&usqp=CAU" alt="">      
+                             <div class="nav">
+                               <p>iphone 14po</p>
+                               </div>  
+                            </div>
+                
+              
+</section>
     
 </body>
 </html>
