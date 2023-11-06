@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flipkart</title>
+    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+    
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            height: 70px;
+            width: 100%;
+            /* border: 1px solid red; */
+            position: relative;
+            background-color: rebeccapurple;
+
+        }
+        .header .logo {
+            height: inherit;
+            width: 20%;
+            /* border: solid red; */
+            position: absolute;
+        }
+        .header .logo img {
+            height: 100%;
+            width: 100%;
+        }
+        .header .menu ul{
+            height: 100%;
+            width: 100%;
+            text-align: right;
+            line-height: 70px;
+        }
+        .header .menu li{
+            display: inline;
+            list-style: none;
+            margin: 0 20px;
+            padding: 15px 30px;
+        }
+        .header .menu ul li a{
+            text-decoration: none;
+            font-size: 30px;
+            color: red;}
+            /* ------------------------------------------------------- */
+            /* sub header  */
+            .header .menu ul .sub-menu {
+                height: auto;
+                width: auto;
+                position: relative;
+                /* background: wheat; */
+            }
+            .header .menu ul .sub-menu .product {
+                height: auto;
+                width: auto;
+                position: absolute;
+                text-align: center;
+                top: 48px;
+                left: 0px;
+                display: none;
+                background: white;
+ }
+            .header .menu ul .sub-menu .product li {
+                 display: block;
+                 width: 100%;
+                 padding: 0 15px;
+                 margin: 0;
+            }
+            .header .menu ul .sub-menu:hover .product {
+                   display: block;
+            }
+            .header .menu ul .sub-menu:hover .product li a{
+                color:black;
+            }
+            .header .menu ul .sub-menu:hover .product li:hover a{
+                color: #a00c67;
+            }
+
+        
+        /* ----------------------------- */
+        .icons-container{
+            height: 150px;
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            align-items: center;
+
+        }
+        .icons-container .icons{
+        
+            /* border: 1px solid red; */
+        }
+        .icons-container .icons img{
+            height: 150px;
+            width: 168px;
+            
+        }
+        .icons-container .icons a{
+        
+            text-decoration: none;
+
+        }
+        .icons-container .icons p{
+            font-weight: bold;
+            color: black;
+            font-size: 20px;
+            text-align: center;
+            /* border: 1px solid red; */
+            background: burlywood;
+            
+            }
+
+        /* ------------------------------------------------------------------------------ */
+        .data{
+            height: auto;
+            width: auto;
+            border: 1 px solid red;
+        }
+        .data img{
+            margin-top: 14px;
+            height:auto ;
+            width: 100%;
+        }
+ /* ----------------------------------------------------------------------------------- */
+       .text{
+        height: auto;
+        width: auto;
+        /* border: 1 px solid red; */
+    
+       }
+       .text p{
+        font-size: 40px;
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
+       .text a{
+        text-decoration: none;
+       }
+    /* ----------------------------------------------------------------------------------------- */ 
+    .phone-pay{
+            height: 200px;
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            /* align-items: center; */
+            transition: 2.5s;
+            
+    }
+    .phone-pay .pay-1 img{
+        height: 200px;
+        width: 330px;
+        margin: 5px;
+        border: 1px solid red;
+        
+    }
+    .phone-pay .pay-2 img{
+        height: 200px;
+        width: 330px;
+        margin: 5px;
+        border: 1px solid red;
+    }
+    .phone-pay .pay-3 img{
+        height: 200px;
+        width: 330px;
+        margin: 5px;
+        border: 1px solid red;
+
+    }
+    .phone-pay .pay-4 img{
+        height: 200px;
+        width: 330px;
+        margin: 5px;
+        border: 1px solid red;   
+    }
+    /* .phone-pay .pay{ */
+        /* background-color: #a00c67; */
+        
+        /* border: 1px solid red; */
+    
+    /* .phone-pay .pay img{ */
+        /* height: 350px; */
+        /* width: 335px; */
+        
+        /* transform: scale(1.5,1.5); */
+    .phone-pay .pay-1 :hover{
+        transform: scale(1.2,1.2)
+    }   
+    .phone-pay .pay-2 :hover{
+        transform: scale(1.2,1.2);
+    } 
+    .phone-pay .pay-3 :hover{
+        transform: scale(1.2,1.2);
+    } 
+    .phone-pay .pay-4 :hover{
+        transform: scale(1.2,1.2);
+    } 
+
+
+
+    .phone-pay .pay-1 a{
+       text-decoration: none;
+    }
+
+    .phone-pay .pay-2 a{
+       text-decoration: none;
+    }
+    .phone-pay .pay-3 a{
+       text-decoration: none;
+    }
+    .phone-pay .pay-4 a{
+       text-decoration: none;
+    }
+
+
+    .phone-pay .pay-1 p{
+        font-weight: bold;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        /* border: 1px solid red; */
+        /* background: burlywood; */
+        
+    }
+    .phone-pay .pay-1 p{
+        font-weight: bold;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+    }
+    .phone-pay .pay-2 p{
+        font-weight: bold;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+    }
+    .phone-pay .pay-3 p{
+        font-weight: bold;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+    }
+    .phone-pay .pay-4 p{
+        font-weight: bold;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+    }
+    /*------------------------------------footer start----------------------*/
+    footer{
+    background: #343434;
+    /* padding-top: 200px; */
+    padding-bottom: 60px;
+    color: aliceblue;
+    font-style: bold;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .container{
+    width: 1140px;
+    margin: 70px;
+    display: flex;
+    justify-content: center;
+
+    }
+    
+    .footer{
+    /* padding-top: 50px; */
+    margin: 300px;
+    
+    }
+    .footer-content{
+    margin: 20px;
+    }
+    .list{
+    padding: 0;
+    }
+    .list li{
+    width: auto;
+    list-style-type: none;
+    }
+    .list a{
+    text-decoration: none;
+    color: white;
+    }
+    .footer-content h3{
+    color:dimgrey;
+    margin-bottom: 10px;
+    /* list-style-type: none; */
+    /* text-decoration: none; */
+    }
+    .footer-content p a{
+    text-decoration: none;
+    color: blue;
+    }
+    /* .footer-content p a :hover{ */
+    /* text-decoration-line:line-through; */
+    
+    /* } */
+    .footer-content li a :hover{
+    color: black;}
+
+    .container .container-1{
+        height: auto;
+        width: inherit;
+        display: flex;
+    }
+    .container .container-1 a{
+      text-decoration: none;
+      color: white;
+
+    }
+    .container .container-1 .h3 a :hover{
+      color: #a01616;
+      
+      
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="header">
+        <!-- header logo -->
+        <div class="logo">
+            <img src="https://cdn.iconscout.com/icon/free/png-512/free-flipkart-2709174-2249163.png?f=webp&w=256" alt="">
+        </div>
+       <!-- Header Menu -->
+    <div class="menu">
+        <ul>
+            <li><a href="#">become seller</a></li>
+            <!-- <li><a href="#">sing in</a></li> -->
+            <li><a href="#">cart</a></li>
+            <li class="sub-menu"><a href="#">sing in</a>
+                <ul class="product">
+                  <li><a href="#">MyProfile</a></li>
+                  <li><a href="#">Flipkartpluszone</a></li>
+                  <li><a href="#">Orders</a></li>
+                  <li><a href="#">Wishlist</a></li>
+                  <li><a href="#">Rewards</a></li>
+                  <li><a href="#">Gift cards</a></li>
+                  
+
+
+     </ul>
+        </ul>
+       </div>
+    </div>
+       <!-- ------------------------------------------------- -->
+     <section class="icons-container">
+    <div class="icons">
+        <a href="https://www.flipkart.com/">
+            <img src="https://cdn.vectorstock.com/i/preview-1x/34/12/grocery-delivery-filled-colorful-logo-vector-48403412.jpg" alt="">      
+    <div class="info">
+           <p>Grocery</p>
+           </div>  
+           </div>
+    
+    <div class="icons">
+           <a href="https://www.flipkart.com/">
+            <img src="https://images.glowroad.com/faceview/hb/jd/bj/c9b/imgs/2e71ce83-bed5-4d59-9221-975e64500d07_21199371-xlgnm400x400.jpg" alt="">
+    <div class="info">  
+           <p>Mobile</p>
+           </a>
+    </div>
+    </div>
+      
+    <div class="icons">
+            <a href="https://www.flipkart.com/">
+             <img src="https://t4.ftcdn.net/jpg/00/30/42/27/360_F_30422752_w1SUKUMnnAzhgYSNd01A1oXSYncJizkU.jpg" alt="">
+             <div class="info">
+            <p>travel</p>  
+            </a>
+    </div>
+    </div>
+    <div class="icons">
+        <a href="https://www.flipkart.com/">
+         <img src="https://dukaan.b-cdn.net/700x700/webp/media/0a1d2a66-c4fc-48ef-84c6-507422f84ca6.jpg" alt="">
+         <div class="info">
+        <p>Electonics</p>  
+    </a>
+    </div>
+</div>
+<div class="icons">
+    <a href="https://www.flipkart.com/">
+     <img src="https://t4.ftcdn.net/jpg/02/62/24/31/360_F_262243135_q7xBjfg02gaeD1NVfIqHBLz3qrOMFYcw.jpg" alt="">
+     <div class="info">
+    <p>Fashion</p>  
+</a>
+</div>
+</div>
+<div class="icons">
+    <a href="https://www.flipkart.com/">
+     <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmVhdXR5fGVufDB8fDB8fHww" alt="">
+     <div class="info">
+    <p>Beauty</p>  
+</a>
+</div>
+</div>
+<div class="icons">
+    <a href="https://www.flipkart.com/">
+     <img src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/dedab726-acad-43e2-a33f-64ee4dec5b77._CR0,0,1200,628_SX430_QL70_.jpg" alt="">
+     <div class="info">
+    <p> Home & kitchen</p>  
+</a>
+</div>
+</div>
+<div class="icons">
+    <a href="https://www.flipkart.com/">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp9cN278nXQ3TSdWCyZ5PoLMQxHpv92USzZQ&usqp=CAU" alt="">
+     <div class="info">
+    <p>Furniture</p>  
+</a>
+</div>
+</div>
+
+ </section>
+ 
+ <!-- ------------------------------------------------------------------------------------- -->
+ <section class="data">
+    <div class="data">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/01d585fee99375e8.png?q=20" alt="">
+    </div>
+ </section>
+<!-- -------------------------------------------------------------------------------------- -->
+<section class="text">
+    <div class="text">
+        <a href="#"><p>Best Mobile</p></a>
+    </div>
+</section>
+<!-- ----------------------------------------------------------------------------------------- -->
+<section class="phone-pay">
+    <div class="pay-1">
+                <a href="https://www.flipkart.com/">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZV01Ooaix-9hM1KI24u2vrHWYU3nP_VELvw&usqp=CAU" alt="">      
+                 <div class="nav">
+                   <p>Samsung S22 5G</p>
+                   </div>  
+                </div>
+    <div class="pay-2">
+                    <a href="https://www.flipkart.com/">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsiXxtP2VyaseYCW6k1ZA6TCaD1oPX0U8EvQ&usqp=CAU" alt="">      
+                     <div class="nav">
+                       <p>Realme 11pro 5G</p>
+                       </div>  
+                    </div>
+    <div class="pay-3">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH7Z9C44wNGuryrdb-1f6ynn8Wkcdfz1NHJQ&usqp=CAU" alt="">      
+                         <div class="nav">
+                           <p>Redmi 12</p>
+                           </div>  
+                        </div>
+    <div class="pay-4">
+                            <a href="https://www.flipkart.com/">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZV01Ooaix-9hM1KI24u2vrHWYU3nP_VELvw&usqp=CAU" alt="">      
+                             <div class="nav">
+                               <p>iphone 14po</p>
+                               </div>  
+                            </div>
+                
+              
+</section>
+
+<!----------------------footer start------------------------>
+<footer>
+<div class="container">
+<div class="footer-content">
+<h3>ABOUT</h3>
+    <ul class="list">
+    <li><a href="">contect us</a></li>
+    <li><a href="">About us</a></li>
+    <li><a href="">careers</a></li>
+    <li><a href="">Flipkart stories</a></li>
+    <li><a href="">press</a></li>
+    <li><a href="">flipkart wholesale</a></li>
+    <li><a href="">cleartrip</a></li>
+    <li><a href="">corporate information</a></li>
+     </ul>
+</div>
+<div class="footer-content">
+   <h3>HELP</h3>
+    <ul class="list">
+    <li><a href="">Payments</a></li>
+    <li><a href="">Shipping</a></li>
+    <li><a href="">Cancellation & Returns</a></li>
+    <li><a href="">FAQ</a></li>
+    <li><a href="">Report Infringement</a></li>
+     </ul>
+</div>
+<div class="footer-content">
+    <h3>CONSUMER POLICY</h3>
+    <ul class="list">
+    <li><a href="">Cancellation & Returns</a></li>
+    <li><a href="">Terms of use</a></li>
+    <li><a href="">Security</a></li>
+    <li><a href="">Privacy</a></li>
+    <li><a href="">sitemap</a></li>
+    <li><a href="">Grievance Redressal</a></li>
+    <li><a href="">EPR Compliance</a></li>
+ 
+     </ul>
+</div>
+<div class="footer-content">
+    <h3>SOCIAL</h3>
+    <ul class="list">
+    <li><a href="">Facebook</a></li>
+    <li><a href="">Twitter</a></li>
+    <li><a href="">You Tube</a></li>
+    </ul>
+</div>
+<div class="footer-content">
+  <h3>MAIL US:</h3>
+  <p>Flipkart internal privet limited,<br>
+  buildings alyssa,begonia & <br>
+  Clove Embassy Tech Village,<br>
+  Bengaluru, 560103<br>
+  Karnataka,india</p>
+</div>
+<div class="footer-content">
+  <h3>Registered office Address</h3>
+  <p>Flipkart internal privet limited,<br>
+  buildings alyssa,begonia & <br>
+ Clove Embassy Tech Village,<br>
+  Outer ring road,Devarabeesanahalli village,<br>
+  Bengaluru, 560103<br>
+  Karnataka,india<br>
+  CIN:U51109KA2012PTC066107<br>
+  Telephone:<a href="">044-45614700</a>
+  </p>
+
+</div>
+</div>
+<div class="container">
+<div class="container-1">
+ <h3><a href=""> Become a seller</a></h3>
+</div>
+<div class="container-1">
+ <h3><a href=""> Advertise</a></h3>
+</div>
+<div class="container-1">
+ <h3><a href=""> gift cards</a></h3>
+</div>
+<div class="container-1">
+ <h3><a href=""> Help center</a></h3>
+</div>
+<div class="container-1">
+ <h3>@ 2007-2023 Flipkart.com</h3>
+</div>
+<div class="container-1">
+<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg" alt="">
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+</footer>
+    
+</body>
+</html>
