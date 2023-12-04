@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+   .grid{
+    height: 600px;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(4,200px);
+    width: 100%;
+    /* background-color: black; */
+  
+   }
+   .grid img{
+    margin: 5px;
+   }
+   #grid1{
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+   }
+   #grid2{
+    grid-column-start: 8;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 2;
+   }
+   #grid3{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+   }
+   #grid4{
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 3;
+   }
+   #grid5{
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 3;
+   }
+   #grid6{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+   }
+   #grid7{
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    grid-row-end: 4;
+   }
+   #grid8{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+   }
+   #grid9{
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 5;
+   }
+   #grid10{
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 4;
+    grid-row-end: 5;
+   }
+  /* -------------------------------------------------------------------------------- */
+   @media (max-width:500px) {
+    .grid{
+        height: auto;
+        border: 1px solid red;
+        display: grid;
+        grid-template-columns: 1fr,;
+        grid-template-rows: repeat(10,200px);
+        width: 100%;
+    }
+    #grid1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+   }
+   #grid2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+   }
+   #grid3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+   }
+   #grid4{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+   }
+   #grid5{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+   }
+   #grid6{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+   }
+   #grid7{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 8;
+   }
+   #grid8{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 8;
+    grid-row-end: 9;
+   }
+   #grid9{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 9;
+    grid-row-end: 10;
+   }
+   #grid10{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 10;
+    grid-row-end: 11;
+   }
+  }
+/* --------------------------------- */
+
+
+ 
+
+  @media (min-width:500px)and(max-width:700px)
+  {
+    .grid{
+        height: auto;
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,200px);
+        width: 100%;
+        column-gap: 5px;
+    }
+    #grid1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+   }
+   #grid2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+   }
+   #grid3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+   }
+   #grid4{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+   }
+   #grid5{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+   }
+   #grid6{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+   }
+   #grid7{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end:5;
+   }
+   #grid8{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+   }
+   #grid9{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+   }
+   #grid10{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+   }
+  }
+ 
+</style>
+<body>
+    <div class="grid">
+        <div class="d" id="grid1" style="background-color: black;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKaR2_-dcVidiLcbmip6WiIOJt6U3J7YtGkA&usqp=CAU" height="100%" width="100%" alt="">
+        </div>
+        <div class="d" id="grid2" style="background-color: black;">
+        <img src="https://wallpapers.com/images/featured/beautiful-birds-ur044uypjp7of47j.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="d" id="grid3" style="background-color: black;">
+        <img src="https://www.shutterstock.com/image-photo/blue-bird-beautiful-cut-600nw-2366320965.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="d" id="grid4" style="background-color: black;">
+        <img src="https://thumbs.dreamstime.com/b/love-birds-colorful-background-61784122.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="d" id="grid5" style="background-color: black;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNDxqMNUo3cODgAvFFYLBLEnWl88_EZxh6AA&usqp=CAU" alt="" height="100%" width="100%">
+        </div>
+        <div class="d" id="grid6" style="background-color: black;">
+            <img src="https://img.freepik.com/premium-photo/nature-beautiful-birds-tree-by-ai-generator_963653-6.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="d" id="grid7" style="background-color: black;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlVwuLJSyBElGOjPHosBtd2gYrVK6ZVK3pbl4vefZLDfhUnFT08B4owe_VuqJYoaa6MPY&usqp=CAU" alt="" height="100%" width="100%">
+        </div>
+        <div class="d" id="grid8" style="background-color: black;">
+            <img src="https://cdn.thecoolist.com/wp-content/uploads/2021/05/Golden-Pheasant-Most-Beautiful-Bird-in-the-World.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="d" id="grid9" style="background-color: black;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZMet4F9HLBMa0uX3uEC1BHqrL0hrsY_-GiQ&usqp=CAU" alt="" height="100%" width="100%">
+        </div>
+        <div class="d" id="grid10" style="background-color: black;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTal8H3XnP_gHWDIGwEB0tMaz1rzHZv26WRrQ&usqp=CAU" alt="" height="100%" width="100%">
+        </div>
+
+    
+</body>
+</html>
