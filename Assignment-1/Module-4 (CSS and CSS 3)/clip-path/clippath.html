@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrKHPsvNDJHY9tWpkHrfkfo8Dkf0LvZU3Hdg&usqp=CAU); */
+            background-size: 50% 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .clippath{
+            display: flex;
+            height: 600px;
+            width: 100%;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrKHPsvNDJHY9tWpkHrfkfo8Dkf0LvZU3Hdg&usqp=CAU);
+            backdrop-filter: brightness(70%);
+            background-size: 100% 100%;
+            -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 81%, 50% 100%, 0 83%, 0 0);
+clip-path: polygon(50% 0%, 100% 0, 100% 81%, 50% 100%, 0 83%, 0 0);
+        }
+        /* ------------------- */
+       
+        .clippath p{
+           color: black;
+           font-weight: 900;
+           font-size: 45px;
+           margin-top: 7px;
+           height: 54px;
+           width: 40px;
+           margin-left: 30px;
+        }
+           /* background-color: white; */
+           /* border: 3px solid white; */
+           
+          /* border: 1 px solid red; */
+          /* height: 30px;
+          width: 50px; */
+          
+          /* .clippath  p{
+            font-size: 55px;
+            margin-top: 7px;
+            height: 50px;
+            width: 130px;
+            margin-left: 0px;
+            border: 2px solid white;
+            background-color: cornflowerblue;
+            text-align: center; */
+            
+
+            
+
+          
+        .clippath ul{
+            height: 70px;
+            width: 100%;
+            line-height: 70px;
+           
+
+        }
+        .clippath ul li{
+            list-style: none;
+            display: inline;
+            margin: 2px;
+            padding: 3px 3px;
+            margin-left: 100px;
+            padding: 2px;
+            
+           
+            
+        }
+        .clippath ul li a{
+            text-decoration: none;
+            font-size: 12px;
+            color: black;
+            font-weight: 900;
+            
+        }
+        .clippath ul li a::after{
+            content: '';
+            background: royalblue;
+            position: absolute;
+            top: 50px;
+            left: 30%;
+
+        }
+        .clippath .menu .text{
+            margin: 170px;
+            
+            
+        }
+        .clippath .menu .text h4{
+            margin-left: 200px;
+       
+
+        }
+        .clippath .menu .text h1{
+            margin-left: 100px;
+            font-size: 50px;
+            margin-top: 3px;
+           padding: 0 ;
+        }
+        .clippath .menu .text h6{
+            margin-left: 120px;
+        }
+        .clippath .menu .text .login h3{
+            /* height: 35px;
+            width: 100px; */
+            color: text;
+            background-clip: text;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrKHPsvNDJHY9tWpkHrfkfo8Dkf0LvZU3Hdg&usqp=CAU);
+            background-size: 100% 100%;
+            text-align: center;
+            font-size: 13px;
+            
+            /* top: 10px; */
+        
+            
+        }
+        .clippath .menu .text .login{
+            margin-left: 200px;
+           
+            
+            
+        }
+        
+
+
+        
+           
+    </style>
+</head>
+<body>
+    <div class="clippath">
+        <p style="background-color: white; text-align: center;">L</p>
+
+        <p style="margin-left: 0px; border: 3px solid white ; width: 115PX; text-align: center;">OGO</p>
+        
+    <div class="menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">PRICING</a></li>
+            <li><a href="#">TEAM</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        
+        <div class="text">
+            <h4>our clients Are our First Priority</h4>
+            <h1>WELCOME TO SKY</h1>
+            <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe corrupti sit deserunt soluta <br>commodi nostrum facere atque quo dolorem dolore harum quia esse, iure nulla dicta, optio iusto <br> ullam. Corrupti eos incidunt voluptatem? Eum vitae accusantium sapiente architecto?</h6>
+
+        <div class="login">
+            
+                 <button type="button" style="background-color: orangered; border: none; color: white;">GET STARTED NOW</button>
+                 <button type="button" style="border: 1px solid white;"><h3>LEARN MORE</h3></button>
+            
+        </div>
+        </div>
+        
+        
+    </div>
+</body>
+</html>
