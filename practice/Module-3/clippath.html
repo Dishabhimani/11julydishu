@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClipPath</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /* height: 100vh; */
+            /* width: 100vw; */
+            /* background: url('https://images.unsplash.com/photo-1682687982141-0143020ed57a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D'); */
+            background-size: 50% 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .clippath{
+            height: 600px;
+            width: 100%;
+            background-image: url('https://plus.unsplash.com/premium_photo-1700502030330-85660225b0c3?q=80&w=1326&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            backdrop-filter: brightness(70%);
+            background-size: 100% 100%;
+            -webkit-clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);            
+        }
+        .clippath ul{
+            height: auto;
+            width: auto;
+            text-align: center;
+        }
+        .clippath ul li{
+            list-style: none;
+            display: inline;
+            padding: 70px;
+            margin: 18px;
+        }
+        .clippath ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 23px;
+        }
+    </style>
+</head>
+<body>
+    <div class="clippath">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Personal Detail</a></li>
+        </ul>
+    </div>
+    <div class="svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,96L8.9,90.7C17.8,85,36,75,53,90.7C71.1,107,89,149,107,176C124.4,203,142,213,160,181.3C177.8,149,196,75,213,64C231.1,53,249,107,267,144C284.4,181,302,203,320,213.3C337.8,224,356,224,373,213.3C391.1,203,409,181,427,165.3C444.4,149,462,139,480,138.7C497.8,139,516,149,533,176C551.1,203,569,245,587,229.3C604.4,213,622,139,640,106.7C657.8,75,676,85,693,128C711.1,171,729,245,747,240C764.4,235,782,149,800,101.3C817.8,53,836,43,853,69.3C871.1,96,889,160,907,165.3C924.4,171,942,117,960,101.3C977.8,85,996,107,1013,133.3C1031.1,160,1049,192,1067,176C1084.4,160,1102,96,1120,106.7C1137.8,117,1156,203,1173,202.7C1191.1,203,1209,117,1227,101.3C1244.4,85,1262,139,1280,170.7C1297.8,203,1316,213,1333,229.3C1351.1,245,1369,267,1387,256C1404.4,245,1422,203,1431,181.3L1440,160L1440,0L1431.1,0C1422.2,0,1404,0,1387,0C1368.9,0,1351,0,1333,0C1315.6,0,1298,0,1280,0C1262.2,0,1244,0,1227,0C1208.9,0,1191,0,1173,0C1155.6,0,1138,0,1120,0C1102.2,0,1084,0,1067,0C1048.9,0,1031,0,1013,0C995.6,0,978,0,960,0C942.2,0,924,0,907,0C888.9,0,871,0,853,0C835.6,0,818,0,800,0C782.2,0,764,0,747,0C728.9,0,711,0,693,0C675.6,0,658,0,640,0C622.2,0,604,0,587,0C568.9,0,551,0,533,0C515.6,0,498,0,480,0C462.2,0,444,0,427,0C408.9,0,391,0,373,0C355.6,0,338,0,320,0C302.2,0,284,0,267,0C248.9,0,231,0,213,0C195.6,0,178,0,160,0C142.2,0,124,0,107,0C88.9,0,71,0,53,0C35.6,0,18,0,9,0L0,0Z"></path></svg>
+</div>
+</body>
+</html>
