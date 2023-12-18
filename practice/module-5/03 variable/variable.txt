@@ -1,0 +1,29 @@
+Variable:
+Variable is like a container where we can store the value
+-------------------------------------------------------------------
+Types of declaring variable:-
+1. var 
+    - redefine it , or reinitialize.
+
+2. let
+    - can't redefine it , or reinitialize.
+
+3. const(constant)
+    - can't redefine it , or can't reinitialize.
+--------------------------------------------------------------------
+Types of variable:-
+1. Local 
+    - which variable define inside the function body or block
+    - Local variable can only use inside that function only
+ 
+2. Global
+    - Which was define outside the function body
+    - We can use it any were in that file
+---------------------------------------------------------------------
+
+Types of Value:-
+1. Static 
+    - Which was define in the compile time(source code)
+
+2. Dynamic
+    - Which was define in the run time(Taken from the user)
