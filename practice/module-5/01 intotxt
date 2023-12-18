@@ -1,0 +1,10 @@
+- Java Script is use to create the website responsive
+
+- We can apply the Java Script in three different ways.
+    1. Using external file (.js extension)
+    2. In body (at end) using script tag
+    3. In head using script tag
+
+- Java Script is case sensitive language
+- Java Script doesn't need compiler to execute the code
+- Java Script works like c language (top to bottom)
