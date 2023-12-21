@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-3</title>
+     <style>
+       li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        .webpage {
+            margin: auto;
+            width: 70%;
+            border: 1px solid;
+            display: grid;
+            grid-template-rows:50px,50px,200px,200px,50px;
+            gap: 5px 5px;
+            grid-template-columns:repeat(2,1fr);
+            text-align: center;
+        }
+        header {
+            background-color: navajowhite;
+            height: 50px;
+            grid-area: 1/1/2/3;
+            text-align: center;
+        }
+
+        nav {
+            background-color: pink;
+            height: 50px;
+            grid-area: 2/1/3/3;
+        }
+
+        aside {
+            background-color: orchid;
+            height: 100px;
+            grid-area: 3/1/4/2;
+        }
+
+        article {
+            background-color: blueviolet;
+            height: 100px;
+            grid-area: 4/1/5/2;
+        }
+
+        section {
+            background-color: gray;
+            height: 200px;
+            grid-area: 3/2/5/3;
+        }
+
+        footer {
+            background-color: rgb(180, 230, 31);
+            height: 50px;
+            grid-area: 5/1/6/3;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        Q-3 &nbsp; Semantic Element in HTML5? 
+    </h2>
+    <h2>Ans.</h2>
+    <h3>Sementic element have its used create for the structure, it's tags have given it's name according it's work.
+    </h3>
+    <li>&lt;header&gt;:-it use to create header section in webpage it include web-logo</li>
+    <li>&lt;nav&gt;:-navigation used for create the menu or some other option.</li>
+    <li>&lt;aside&gt;:- it used for side-content in webpages.</li>
+    <li>&lt;article&gt;:- it is used for some article,poster etc content. </li>
+    <li>&lt;section&gt;:- it is used for saw all type content in web page.</li>
+    <li>&lt;footer&gt;: it is used for footer in web page for saw copyright info of site and other contact details.</li>
+    <div class="webpage">
+        <header>header</header>
+        <nav>nav</nav>
+        <aside>aside</aside>
+        <article>article</article>
+        <section>section</section>
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>
