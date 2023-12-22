@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wav</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        section {
+            position: relative;
+            height: 630px;
+            width: 100%;
+            border: 1px solid;
+        }
+
+        #bg {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .text {
+            text-align: center;
+            position: absolute;
+            top: 150px;
+            left: 35%;
+        }
+
+        .text h1 {
+            font-size: 36px;
+            letter-spacing: 4px;
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+         p {
+            font-size: 14px;
+            line-height: 29px;
+            color: #f4f5f9;
+            font-weight: 400;
+        }
+
+        .circle {
+            margin: auto;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #e74c3c;
+        }
+
+        .circle::before {
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 100px;
+            background-color: #f4f5f9;
+            margin: 0% 40px;
+            left: 0%;
+        }
+
+        .circle::after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 100px;
+            background-color: #f4f5f9;
+            margin: 0% 40px;
+            right: 0%;
+        }
+
+        svg {
+            position: absolute;
+            bottom: 0%;
+        }
+
+        .team {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #e74c3c;
+            text-align: center;
+            position: absolute;
+        }
+
+        .team img {
+            height: 92%;
+            width: 92%;
+            border-radius: 50%;
+            margin-top: 2px;
+        }
+
+        .d-1 {
+            top: 550px;
+            left: 100px;
+        }
+
+        .d-2 {
+            top: 470px;
+            left: 350px;
+            transform: scale(1.5);
+        }
+
+        .t-d::after {
+            content: "";
+            position: absolute;
+            height: 20px;
+            width: 2px;
+            background-color: #f4f5f9;
+            /* margin: 0% 40px; */
+            left: 50%;
+            top: 100%;
+        }
+
+        .data {text-align: center;
+            position: absolute;
+            top: 520px;
+            left: 300px;
+        }
+
+        .data h3{
+            font-size: 24px;
+            letter-spacing: 2px;
+            color: #e74c3c;
+            font-weight: 600;
+        }
+
+        .d-3 {
+            top: 430px;
+            left: 550px;
+        }
+
+        .d-4 {
+            top: 430px;
+            left: 700px;
+        }
+
+        .d-5 {
+            top: 440px;
+            left: 900px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <img id="bg" src="https://images.saymedia-content.com/.image/t_share/MTkzODAzNTgyODUxMDY1MzI4/cool-css-backgrounds.jpg" alt="bg-img">
+        <div class="text">
+            <h1>OUR TEAM</h1>
+            <p>Meet the craziest team. Share your thoughts with them.</p>
+            <div class="circle"></div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" stroke="red" stroke-width="2px">
+            <path fill="#e74c3c" fill-opacity="0.102" 
+                d="M0,288L48,277.3C96,267,192,245,288,213.3C384,181,480,139,576,122.7C672,107,768,117,864,133.3C960,149,1056,171,1152,154.7C1248,139,1344,85,1392,58.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <div class="team d-1"><img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="team"></div>
+        <div class="team d-2"><img src="https://w7.pngwing.com/pngs/90/654/png-transparent-skin-care-elastin-human-skin-cream-woman-face-miscellaneous-cream-face-thumbnail.png" alt="team"></div>
+            
+        <div class="data">
+            <h3>WEB DESIGNER</h3>
+            <P>UI/UX DESIGNER</P>
+        </div>
+        <div class="team d-3"><img src="https://images.pexels.com/photos/3797438/pexels-photo-3797438.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="team"></div>
+        <div class="team d-4"><img src="https://img.freepik.com/free-photo/portrait-expressive-young-woman_1258-48167.jpg?size=626&ext=jpg" alt="team"></div>
+        <div class="team d-5"><img src="https://img.freepik.com/free-photo/confident-attractive-caucasian-guy-beige-pullon-smiling-broadly-while-standing-against-gray_176420-44508.jpg?size=626&ext=jpg" alt="team"></div>
+    </section>
+</body>
+
+</html>
