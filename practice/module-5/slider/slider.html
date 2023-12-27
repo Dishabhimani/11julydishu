@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        body{background: #000;}
+        .x{
+            height: 500px;
+            width: 80%;
+            margin: auto;
+            position: relative;
+        }
+        .x img{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            filter: brightness(70%);
+        }
+        button{
+            height: 100%;
+            padding: 10px 20px;
+            font-size: 57px;
+            position: absolute;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-weight: 900;
+            color: #fff;
+        }
+        #btn-1{
+            left: 0;
+            top: 0%;
+            /* transform: translateY(50%); */
+        }
+        #btn-2{
+            right: 0;
+            top: 0%;
+            /* transform: translateY(50%); */
+        }
+    </style>
+</head>
+<body>
+    <div class="x">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9jrQlogSWeuOBzcijW3KjLhabP2tVJKVU3w&usqp=CAU" alt="" id="img">
+        <button type="button" id="btn-1" onclick="pre()">Pre</button>
+        <button type="button" id="btn-2" onclick="next()">Next</button>
+    </div>
+    <script>
+        // let btn1 = document.getElementById('btn-1');
+        // let btn2 = document.getElementById('btn-2');
+        let img = document.getElementById("img");
+        let flag = 0;
+        function next()
+        {
+            if(flag == 0)
+            {
+                img.src= "https://media.istockphoto.com/id/182816955/photo/the-number-0.jpg?s=612x612&w=0&k=20&c=8IHoTQsQ6CyTUNXKBMaEFu5ibet6CtLvL2g8-UpI48s="
+            }
+            else if(flag == 1)
+            {
+                img.src = "https://t4.ftcdn.net/jpg/00/99/53/31/360_F_99533164_fpE2O6vEjnXgYhonMyYBGtGUFCLqfTWA.jpg"
+            }
+            else if(flag == 2)
+            {
+                img.src = "https://t3.ftcdn.net/jpg/00/25/85/36/360_F_25853657_TZaY3PRevrRfVLhVwACDw1YxdmGQLXhf.jpg"
+            }
+            else if(flag == 3)
+            {
+                img.src = "https://t3.ftcdn.net/jpg/01/01/84/24/360_F_101842441_BbDY5zsoSCp0ohA5m7dhT18W2XQnlt5m.jpg"
+            }
+            else{
+                img.src="https://cdn5.vectorstock.com/i/1000x1000/15/64/old-movie-ending-screen-stylized-noir-the-end-vector-6391564.jpg"
+                flag = 0;
+            }
+            ++flag;
+        }
+        function pre()
+        {
+            if(flag == 0)
+            {
+                img.src= "https://media.istockphoto.com/id/182816955/photo/the-number-0.jpg?s=612x612&w=0&k=20&c=8IHoTQsQ6CyTUNXKBMaEFu5ibet6CtLvL2g8-UpI48s="
+            }
+            else if(flag == 1)
+            {
+                img.src = "https://t4.ftcdn.net/jpg/00/99/53/31/360_F_99533164_fpE2O6vEjnXgYhonMyYBGtGUFCLqfTWA.jpg"
+            }
+            else if(flag == 2)
+            {
+                img.src = "https://t3.ftcdn.net/jpg/00/25/85/36/360_F_25853657_TZaY3PRevrRfVLhVwACDw1YxdmGQLXhf.jpg"
+            }
+            else if(flag == 3)
+            {
+                img.src = "https://t3.ftcdn.net/jpg/01/01/84/24/360_F_101842441_BbDY5zsoSCp0ohA5m7dhT18W2XQnlt5m.jpg"
+            }
+            else{
+                img.src="https://cdn5.vectorstock.com/i/1000x1000/15/64/old-movie-ending-screen-stylized-noir-the-end-vector-6391564.jpg"
+                flag = 4;
+            }
+            --flag;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        
+        // setInterval(next, 5000)
+    </script>
+</body>
+</html>
