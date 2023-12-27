@@ -1,0 +1,397 @@
+<style>
+    body {
+        background: #FBFAFE;
+    }
+    
+    /* -----------------------------------------------HEADER----------------------------------------- */
+    header {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    header .logo {
+        margin-top: -25px;
+        padding: 0%;
+        color: #1D2830;
+        font-family: Josefin Sans;
+        font-size: 24px;
+        font-weight: 400;
+        /* 100% */
+        letter-spacing: -1.44px;
+    }
+    
+    header ul li {
+        display: inline-block;
+        padding: 0px 5px;
+        list-style: none;
+        cursor: pointer;
+    }
+    
+    header li span {
+        background-color: #ECE5FF;
+        border-radius: 4px;
+        color: #310ca2;
+    }
+    
+    .menu {
+        display: flex;
+    }
+    
+    .menu img {
+        display: none;
+    }
+    
+    .menu img {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .offer span {
+        background: #cd0fa0e5;
+        padding: 0px 5px;
+        border-radius: 10px;
+    }
+    
+    .m-1 {
+        width: 50%;
+        margin: auto;
+        color: #667e91;
+        font-size: 60px;
+        font-weight: 600;
+    }
+    
+    .offer,
+    .m-1,
+    .info,
+    .mail {
+        text-align: center;
+    }
+    
+    .mail button {
+        background-color: #794CFF;
+        border: none;
+        color: #FFF;
+        border-radius: 5px;
+    }
+    
+    .mail input,
+    .mail button {
+        padding: 5px;
+    }
+    
+    .img-1 {
+        width: 70%;
+        height: 70vh;
+        margin: 5px auto;
+        text-align: center;
+    }
+    
+    .img-1 img {
+        height: inherit;
+        width: inherit;
+    }
+    
+    .logo {
+        width: 100%;
+        height: 70px;
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .logo img {
+        height: inherit;
+        width: inherit;
+    }
+    
+    /* --------------------------------------------------section-2-------------------------------------------------- */
+    .sec-2 {
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0px;
+    }
+    
+    .sec-2 .box {
+        height: 50vh;
+        width: 35%;
+        /* border: 1px solid; */
+        padding: 25px;
+        position: relative;
+    }
+    
+    .sec-2 .box img {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .sec-2 #Timeline {
+        color: #4E5A65;
+        font-weight: 500;
+        border: none !important;
+        margin: 16px !important;
+    }
+    
+    .parent p {
+        color: #4E5A65;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        width: 50%;
+        margin-left: 20%;
+        border: 1px solid;
+    }
+    
+    .parent p span,
+    .son p span {
+        color: #3B7FF6;
+        font-weight: 400;
+        line-height: 16px;
+    }
+    
+    .child span,
+    .son span {
+        color: #4E5A65;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+    
+    .son {
+        min-height: 50%;
+        width: 50%;
+        position: absolute;
+        border: 1px solid;
+        background-color: #fff;
+        top: 45%;
+        left: 45%;
+        z-index: 2;
+    }
+    
+    .list {
+        margin: auto;
+        /* border: 1px solid; */
+        height: 80%;
+        width: 80%;
+        padding: 15px 10px;
+    }
+    
+    .sublist span {
+        color: #35414B;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .sl-1 {
+        background: #F6F3FC;
+    }
+    
+    .sl-1::before {
+        position: absolute;
+        left: 12.5%;
+        content: "";
+        height: 60px;
+        width: 4px;
+        background: #794CFF;
+    }
+    
+    .work {
+        color: #35414B;
+        text-align: center;
+        font-family: Inter;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+    }
+    
+    /* ---------------------------------------------section-3--------------------------------------------------- */
+    .sec-3 {
+        margin: auto;
+        height: 60vh;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .sec-3 .layout {
+        position: relative;
+        height: 40%;
+        width: 30%;
+        /* border: 1px solid; */
+    }
+    
+    .sec-3 .layout .logoes {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+    }
+    
+    .title {
+        margin-top: 15px;
+        color: #35414B;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 5px;
+    }
+    
+    .i {
+        text-align: justify !important;
+        color: #4E5A65;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+    
+    .but {
+        padding: 15px 20px;
+        background-color: #796EFF;
+        width: 30%;
+        text-align: center;
+        color: #fff;
+        font-weight: 500;
+    }
+    
+    .work-info {
+        text-align: center;
+        margin: auto;
+        width: 50%;
+        line-height: 20px;
+    }
+    
+    /* ---------------------------------------------------sec-4-------------------------------------------------- */
+    .sec-4 {
+        margin-top: 20px;
+        height: 80px;
+        width: 100%;
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .box {
+        height: inherit;
+        width: 25%;
+        /* border: 1px solid; */
+        position: relative;
+    }
+    
+    .sec-4 .box img {
+        margin: 12px;
+    }
+    
+    .sec-4 .box p {
+        margin-top: 0%;
+        position: absolute;
+        left: 70px;
+        top: 10px;
+        color: #4E5A65;
+        font-weight: 600;
+    }
+    
+    .sec-4 .box span {
+        position: absolute;
+        left: 70px;
+        top: 40px;
+    }
+    
+    /* -----------------------------------------------sec-5---------------------------------------------------- */
+    .sec-5 {
+        height: 150px;
+        border-radius: 20px;
+        width: 90%;
+        margin: 50px auto;
+        background-color: #796EFF;
+        display: flex;
+    }
+    
+    .sec-5 .part {
+        height: inherit;
+        width: 50%;
+    }
+    
+    .sec-5 .d-1 {
+        padding-left: 30px;
+    }
+    
+    .sec-5 p {
+        color: #FFF;
+        font-weight: 600;
+        font-size: 32px;
+    }
+    
+    .sec-5 img {
+        text-align: center;
+        margin: 10px 20px;
+        height: 50px;
+        width: 200px;
+    }
+    
+    /* ---------------------------------------footer---------------------------------------------------- */
+    footer {
+        height: 200px;
+        background: #1D2830;
+        border-bottom: 0.5px solid #fff;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .copy-1 {
+        height: 50px;
+        background: #1D2830;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .right-1 {
+        color: #fff;
+    }
+    
+    .right-2 {
+        margin-top: 10px;
+    }
+    
+    .right-2 img {
+        margin: 0 5PX;
+    }
+    
+    footer .foot {
+        height: 200px;
+        width: 20%;
+    }
+    
+    .foot button {
+        width: 100%;
+        height: 20px;
+    }
+    
+    .foot li {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .foot li,
+    .foot p {
+        text-align: center;
+        color: #FFF;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        line-height: 16px;
+    }
+    
+    .foot .fa-solid {
+        display: none;
+    }
+    </style>
+  
