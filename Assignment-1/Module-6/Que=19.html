@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que=19</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            text-align: center;
+            /* background-color: wheat; */
+
+
+        }
+        .box{
+            box-shadow: 1px 1px 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <br><br>
+        <lable>Enter Password</lable>
+        <input type="password" name="" id="show">
+        <br><br>
+        <input type="checkbox" name="" onclick="myFunction()">
+
+        <lable>show password</lable>
+        <br><br>
+        <!-- <input type="submit" value="submit" name=""> -->
+    </div>
+    <script type="text/JavaScript">
+        function myFunction() {
+            var show = document.getElementById('show')
+            if (show.type=='password') {
+                show.type='text';
+            }
+           else {
+                show.type='password'
+            }
+        }
+    </script>
+
+
+    
+</body>
+</html>
