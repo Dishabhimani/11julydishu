@@ -1,0 +1,13 @@
+Loop
+-> Loop is use to execute the line of statement multiple time
+
+types:
+1. Entry Control Loop
+    i.  While loop
+   ii.  For Loop
+  iii.  for-in
+   iv.  for-of
+    v.  for-each
+
+2. Exit Control Loop
+    i. Do-While loop
