@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-17</title>
+</head>
+<body>
+    <h1> • What are the disadvantages of using innerHTML in JavaScript?</h1>
+</body>
+
+    •Inner HTML is slow:<br>
+    Inner HTML is slow because when we use the inner HTML property in the code it allows us to change using the JavaScript language. It is very slow because as inner HTML already parses the content even we have to parse the content again so that's why it takes time.</h6><br><br>
+    • Preserves event handlers attached to any DOM elements: <br>
+    ->The event handlers do not get attached to the new elements created by setting innerHTML automatically.<br>
+    ->To do so one has to keep track of the event handlers and attach it to new elements manually. 
+    This may cause a memory leak on some browsers.<br><br>
+    •Content is replaced everywhere:<br>
+    ->Either you add, append, delete or modify contents on a webpage using innerHTML, all contents is replaced, also all the DOM nodes inside that element are reparsed and recreated.<br><br>
+    •Appending to innerHTML is not supported:<br>
+    ->Usually, += is used for appending in JavaScript.
+    But on appending to an Html tag using innerHTML, the whole tag is re-parsed.
+
+</html>
