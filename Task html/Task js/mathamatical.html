@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Maths operation</legend>
+        <label for="value1"> Enter 1st Number:</label>
+        <input type="text" name="value1" id="inp1" title="value1"><br><br>
+        <label for="value2">Enter 2nd Number:</label>
+        <input type="text" name="value2" id="inp2" title="value2"><br><br>
+        <button id="op1" onclick="add()">+</button>
+        <button id="op2" onclick="sub()">-</button>
+        <button id="op3" onclick="multi()">*</button><br><br>
+        <button id="reset" onclick="reset()" type="button">Reset</button>
+
+        <label for="result">Result:</label>
+        <input type="text" name="result" id="Ans">
+    </fieldset>
+
+    <script>
+        var value1 = document.getElementById('inp1');
+        var value2 = document.getElementById('inp2');
+        var result = document.getElementById('Ans');
+
+        function add() {
+            result.value = parseInt(value1.value) + parseInt(value2.value);
+        }
+
+        function sub() {
+            result.value = parseInt(value1.value) - parseInt(value2.value);
+        }
+
+        function multi() {
+            result.value = parseInt(value1.value) * parseInt(value2.value);
+        }
+
+        function reset() {
+            value1.value = '';
+            value2.value = '';
+            result.value = '';
+        }
+    </script>
+    
+</body>
+</html>
+
