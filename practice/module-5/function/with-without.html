@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<script>
+        let x, y;
+
+        get();
+
+        // function get() {
+        //     x = parseInt(window.prompt("enter the value of the x:"));
+        //     y = window.prompt("enter the value of the y:");
+        // }
+        // function add() {
+        //     return x + parseInt(y);
+        // }
+        function get() {
+            x = window.prompt("enter the value of the x:");
+            y = window.prompt("enter the value of the y:");
+        }
+        function add() {
+            return parseInt(x) + + y;
+        }
+        document.write(`Addition is: ${add()}`);    
+    </script>
+</body>
+
+</html>
