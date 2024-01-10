@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For-in_Of</title>
+</head>
+<body>
+    
+    <script>
+        let i;
+        let array = [56, 83, 20, 95, 30,'Hello', 'World', 56, '*'];
+        for (i = 0; i < array.length; i++){
+            document.write(array[i] + ',');
+        }
+        document.write('<br>');
+        for (i in array) {
+            document.write(i + ',');
+        }
+        document.write('<br>');
+        for (i  of array) {
+            document.write(i + ',');
+        }
+    </script>
+</body>
+</html>
