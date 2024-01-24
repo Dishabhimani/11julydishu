@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+</head>
+<body>
+    
+    <canvas height="150px" width="150px" id="can"></canvas>
+    <script>
+        var can = document.getElementById('can');
+        can.style.border = "2px solid red";
+        var vtx = can.getcontext("2d");
+        console.log(ctx);
+        ctx.moveto(0, 0)
+        ctx.lineto(150,150)
+        ctx.stroke();
+        </script>
+</body>
+</html>
