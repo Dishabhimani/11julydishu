@@ -1,0 +1,37 @@
+.main{
+    height: auto;
+    width: 30%;
+    background-color: lightslategrey;
+    padding: 50px;
+    margin: auto;
+}
+.main input{
+    height: 70px;
+    width: 99%;
+    font-size: 40px;
+    outline: none;
+    border: none;
+    margin-bottom: 5px;
+}
+.main .calc{
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+button{
+    height: 80px;
+    width: 100%;
+    font-size: 30px;
+    background-color: white;
+    border: 1px solid;
+}
+.calc:first-child, .calc:nth-child(2)
+{
+    background: lightgray;
+}
+button:hover{
+    background-color: seagreen;
+}
