@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-4</title>
+    <style>
+        body {
+            /* background-color: #fc7edf; */
+        }
+
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        .info {
+            /* display: inline-block; */
+          
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        Q-4 &nbsp; Canvas and SVG tags 
+    </h2>
+    <h2>Ans.</h2>
+    <h3> Canvas tag:</h3>
+    <li>Canvas is use to create the graphics.</li>
+    <li>Canvas is a raster base graphics.</li>
+    <li>based on pixels</li>
+    
+    <li>Ex.</li>
+
+    <canvas id="mycanvas" width="100px" height="100px" style="border: 5px solid rgb(19, 84, 149);"></canvas>
+    <script>
+        var canvas = document.getElementById("mycanvas");
+        var can = canvas.getContext("2d");
+        can.fillStyle = 'red';
+        can.fillRect(10, 10, 80, 80);
+    </script>
+   
+    </p>
+    <h3> SVG tag:s</h3>
+    <li>Svg : scalable vector Graphics.</li>
+    <li>Svg is use to create the Graphics.</li>
+    <li>Svg is a vector base graphics.</li>
+    <li> SVG is a W3C recommendation</li>
+    <li>SVG integrates with other standards, such as CSS, DOM, XSL and JavaScript</li>
+    
+    <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="red" />
+      </svg>
