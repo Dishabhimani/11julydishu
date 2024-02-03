@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set</title>
+    <style>
+        body{text-align: center;}
+        div{
+            border: 5px groove mediumvioletred;
+            color: #666;
+            width: 80%;
+            margin: 17px auto;
+            padding: 13px;
+        }
+        button{
+            border: none;
+            display: block;
+            margin: 3px auto;
+            background: mediumpurple;
+            color: #fff;
+            width: 80%;
+            height: 45px;
+            font-size: 20px;
+        }  
+    </style>
+</head>
+
+<body>
+    <div >
+        
+    </div>
+    <img src="" alt="img" height="250px" width="250px">
+    <p></p>
+    Name: <input type="Text" style="height: 50px; width: 200px; font-size: 20px;"/>
+
+    <button type="button" class="button">fadeTo</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                $('div').html("<i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, iure assumenda? Omnis facilis, tenetur </i>")
+            });
+            $('button').click(function(){
+                $('p').text('Hello');
+            });
+            $('button').click(function(){
+                $('img').attr('src','https://faradayshielding.com.au/wp-content/uploads/2021/05/Image_039.jpg');
+            });
+            $('button').click(function(){
+            $('input').val('Hello');
+            });
+        })
+    </script>
+</body>
+
+</html>
