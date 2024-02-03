@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-validation</title>
+</head>
+<body>
+    <form action="form validation.html" method="post" onsubmit="return validate()">
+    <lable for="name">Name:</lable>
+    <input type="text" name="name" id="name">
+    <span></span>
+    <lable for="email">Email:</lable>
+    <input type="email" name="email" id="email">
+    <lable for="phone">phone:</lable>
+    <input type="tel" name="phone" id="phone">
+    <lable for="password">password:</lable>
+    <input type="password" name="password" id="password">
+    <input type="submit" value="submit">
+    </form>
+
+    <script>
+        //form validation
+        function validate() {
+            let ptn = /^[A-Z a-z]{3,5}$/;
+            let noptn = /^[0-9]{10}$/;
+            let passptn = /^(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email');
+            let phone = document.getElementById('phone')
+            let password = document.getElementById('password')
+            console.log("Hello")
+            // name validation
+            if (name == "" || name == ' ') {
+                name.style.outline = "1px solid red";
+                let msg = document.querySelector('#name~span')
+                msg.innerHTML = "*Need to add name"
+                return false;
+            }
+            else if (!ptn.test(name)) {
+                alert('invalid')
+                name.style.outline = "1px solid red";
+                // return false;
+            }
+            // Email validation
+            if (email.value == '' || email.value == ' ') {
+                return 0;
+            }
+            // Phone validation
+            if (phone.value == '' || phone.value == ' ') {
+                return false;
+            }
+            else if (isNaN(phone.value)) {
+                return false;
+            }
+            else if (noptn.test(phone.value)) {
+                return false;
+            }
+            if (password.value == '' || password.value == ' ') {
+                return false;
+            }
+            else if (passptn.test(password.value)) {
+                return false;
+            }
+            else {
+                alert("Submitted")
+            }
+        
+        }
+    </script>
+</body>
+</html>
