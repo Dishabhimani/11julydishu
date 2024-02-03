@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            height: 150px;
+            width: 150px;
+            border: 3px groove mediumvioletred;
+            background-color: mediumpurple;
+            margin: 20px;
+            left: 50%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    
+    <button type="button">Animation</button>
+    <div></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $('div').animate({
+                    left: '250px',
+                    top:'20px',
+                    // opacity: 'toggle',
+                    height: '+=5px',
+                    width: '+=50px'
+                }, 2000).animate({
+                    left: '250px',
+                    top:'500px',
+                    // opacity: 'toggle',
+                    height: '+=5px',
+                    width: '+=50px'
+                }, 2000).animate({
+                    left: '0px',
+                    top:'500px',
+                    // opacity: 'toggle',
+                    height: '+=5px',
+                    width: '+=50px'
+                }, 2000).animate({
+                    left: '0px',
+                    top:'20px',
+                    // opacity: 'toggle',
+                    height: '+=5px',
+                    width: '+=50px'
+                }, 2000)
+            })
+        });
+    </script>
+</body>
+</html>

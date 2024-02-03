@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade</title>
+    <style>
+        div{
+            border: 5px groove mediumvioletred;
+            color: #666;
+            width: 80%;
+            margin: 17px auto;
+            padding: 13px;
+        }
+        .fadeIn{
+            display: none;
+        }
+        button{
+            border: none;
+            display: block;
+            margin: 3px auto;
+            background: mediumpurple;
+            color: #fff;
+            width: 80%;
+            height: 20%;
+        }        
+    </style>
+</head>
+<body>
+    <div class="fadeIn">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, hic dolorem? Error saepe autem dignissimos consequatur eos ipsa voluptatum quis similique, modi a sint repellendus sapiente veniam illo odit quia.
+    </div>
+    <button type="button" class="btn-fadeIn">fadeIn</button>
+    <!-- ----------------------------------------------------------- -->
+    <div class="fadeOut">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, hic dolorem? Error saepe autem dignissimos consequatur eos ipsa voluptatum quis similique, modi a sint repellendus sapiente veniam illo odit quia.
+    </div>
+    <button type="button" class="btn-fadeOut">fadeOut</button>
+    <!-- ----------------------------------------------------------- -->
+    <div class="fadeToggle">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, hic dolorem? Error saepe autem dignissimos consequatur eos ipsa voluptatum quis similique, modi a sint repellendus sapiente veniam illo odit quia.
+    </div>
+    <button type="button" class="btn-fadeToggle">fadeToggle</button>
+    <!-- ----------------------------------------------------------- -->
+    <div class="fadeTo">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, hic dolorem? Error saepe autem dignissimos consequatur eos ipsa voluptatum quis similique, modi a sint repellendus sapiente veniam illo odit quia.
+    </div>
+    <button type="button" class="btn-fadeTo">fadeTo</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.btn-fadeIn').click(function(){
+                $('.fadeIn').fadeIn();
+                // $('.fadeIn').fadeIn('slow');
+                // $('.fadeIn').fadeIn('fast');
+                // $('.fadeIn').fadeIn(5000);
+            });
+            $('.btn-fadeOut').click(function(){
+                $('.fadeOut').fadeOut();
+                // $('.fadeOut').fadeOut('slow');
+                // $('.fadeOut').fadeOut('fast');
+                // $('.fadeOut').fadeOut(5000);
+            });
+            $('.btn-fadeToggle').click(function(){
+                $('.fadeToggle').fadeToggle();
+                // $('.fadeToggle').fadeToggle('slow');
+                // $('.fadeToggle').fadeToggle('fast');
+                // $('.fadeToggle').fadeToggle(5000);
+            });
+            $('.btn-fadeTo').click(function(){
+                $('.fadeTo').fadeTo('fast', '0.5');
+                // $('.fadeTo').fadeTo('slow', '0.5');
+                // $('.fadeTo').fadeTo(5000, '0.5');
+            });
+        });
+    </script>
+</body>
+</html>

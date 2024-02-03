@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+    <style>
+        div{
+            border: 5px groove mediumvioletred;
+            color: #666;
+            width: 80%;
+            margin: 17px auto;
+            padding: 13px;
+        }
+        .slideDown{
+            display: none;
+        }
+        button{
+            border: none;
+            display: block;
+            margin: 3px auto;
+            background: mediumpurple;
+            color: #fff;
+            width: 80%;
+            height: 20%;
+        }        
+    </style>
+</head>
+<body>
+    <div class="slideDown">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, hic dolorem? Error saepe autem dignissimos consequatur eos ipsa voluptatum quis similique, modi a sint repellendus sapiente veniam illo odit quia.
+    </div>
+    <button type="button" class="btn-slideDown">slideDown</button>
+    <div class="slideUp">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, hic dolorem? Error saepe autem dignissimos consequatur eos ipsa voluptatum quis similique, modi a sint repellendus sapiente veniam illo odit quia.
+    </div>
+    <button type="button" class="btn-slideUp">slideUp</button>
+    <div class="slideToggle">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, hic dolorem? Error saepe autem dignissimos consequatur eos ipsa voluptatum quis similique, modi a sint repellendus sapiente veniam illo odit quia.
+    </div>
+    <button type="button" class="btn-slideToggle">slideToggle</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.btn-slideDown').click(function(){
+                $('.slideDown').slideDown();
+                // $('.slideDown').slideDown('slow');
+                // $('.slideDown').slideDown('fast');
+                // $('.slideDown').slideDown(5000);
+            });
+            $('.btn-slideUp').click(function(){
+                $('.slideUp').slideUp();
+                // $('.slideUp').slideUp('slow');
+                // $('.slideUp').slideUp('fast');
+                // $('.slideUp').slideUp(5000);
+            });
+            $('.btn-slideToggle').click(function(){
+                $('.slideToggle').slideToggle();
+                // $('.slideToggle').slideToggle('slow');
+                // $('.slideToggle').slideToggle('fast');
+                // $('.slideToggle').slideToggle(5000);
+            });
+        });
+    </script>
+</body>
+</html>

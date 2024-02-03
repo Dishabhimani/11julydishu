@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show-Hide</title>
+    <style>
+        div{
+            border: 5px groove mediumvioletred;
+            color: #666;
+            width: 80%;
+            margin: 17px auto;
+            padding: 13px;
+        }
+        .show{
+            display: none;
+        }
+        button{
+            border: none;
+            display: block;
+            margin: 3px auto;
+            background: mediumpurple;
+            color: #fff;
+            width: 80%;
+            height: 20%;
+        }        
+    </style>
+</head>
+<body>
+    <div class="show">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, hic dolorem? Error saepe autem dignissimos consequatur eos ipsa voluptatum quis similique, modi a sint repellendus sapiente veniam illo odit quia.
+    </div>
+    <button type="button" class="btn-show">Show</button>
+    <div class="hide">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, hic dolorem? Error saepe autem dignissimos consequatur eos ipsa voluptatum quis similique, modi a sint repellendus sapiente veniam illo odit quia.
+    </div>
+    <button type="button" class="btn-hide">Hide</button>
+    <div class="toggle">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, hic dolorem? Error saepe autem dignissimos consequatur eos ipsa voluptatum quis similique, modi a sint repellendus sapiente veniam illo odit quia.
+    </div>
+    <button type="button" class="btn-toggle">Toggle</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.btn-show').click(function(){
+                $('.show').show();
+                // $('.show').show('slow');
+                // $('.show').show('fast');
+                // $('.show').show(5000);
+            });
+            $('.btn-hide').click(function(){
+                $('.hide').hide();
+                // $('.hide').hide('slow');
+                // $('.hide').hide('fast');
+                // $('.hide').hide(5000);
+            });
+            $('.btn-toggle').click(function(){
+                $('.toggle').toggle();
+                // $('.toggle').toggle('slow');
+                // $('.toggle').toggle('fast');
+                // $('.toggle').toggle(5000);
+            });
+        });
+    </script>
+</body>
+</html>
