@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append-to</title>
+    <style>
+        div {
+            height: auto;
+            width: auto;
+            color: maroon;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum omnis sint officia quo facere distinctio. Excepturi reprehenderit consequuntur laudantium velit esse aliquid a accusamus dicta sapiente! Doloribus impedit corrupti repellendus?
+    </div>
+    <button type="button">Append</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("<i>&nbsp;&nbsp;&nbsp;End</i>").appendTo("div");
+            })
+        })
+    </script>
+    
+</body>
+</html>
