@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before</title>
+    <style>
+        div {
+            height: auto;
+            width: auto;
+            color: maroon;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate labore aliquid distinctio harum iure a
+        perferendis vel sed ullam dicta consectetur, animi voluptatum adipisci nostrum? Tempora similique blanditiis
+        molestiae laudantium!</div>
+    <button type="button">Before</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("div").before("Start");
+            })
+        })
+    </script>
+</body>
+
+</html>
