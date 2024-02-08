@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggleClass</title>
+    <style>
+        :root{
+            --cl: coral;
+        }
+        .add{
+            color: maroon;
+            border: 3px groove var(--cl);
+            font-size: 20px;
+        }
+        .x{
+            text-decoration: underline wavy var(--cl);
+        }
+    </style>
+</head>
+<body>
+    <div  class="add x">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, ipsum beatae. Repellendus asperiores unde soluta, numquam magni nostrum cumque odio atque exercitationem iste dolores magnam odit quos doloribus autem perspiciatis quaerat beatae, perferendis rerum? Ab autem quidem nam? Vero, neque quibusdam? Animi qui mollitia incidunt pariatur similique eos obcaecati velit.</div>
+    <button type="button">Toggle Class</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                $('div').toggleClass('x');
+            });
+        });
+    </script>
+</body>
+</html>
