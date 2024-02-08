@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parent</title>
+</head>
+<body>
+    body
+    <div>div
+
+         <ol>ol
+
+             <li>li</li>
+             <li>li</li>
+
+             <li>li
+                    <span>span</span>
+                    <p>paragraph tag</p>
+                    <span>span</span>
+             </li>
+
+             <li>li</li>
+
+             <li>li
+                <h1>h1</h1>
+             </li> 
+
+         </ol>
+
+         <h1>h1</h1>
+         <h2>h2</h2>
+         <h3>h3</h3>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("body").mouseover(function () {
+                $('span').nextUntil('li').css({
+                    "border": '1px solid red',
+                    'margin': '2px'
+                });
+            })
+        });  
+            
+        
+    </script>
+</body>
+</html>
