@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logical</title>
+</head>
+<body>
+    <div>
+        Value 1: <input type="text" id="inp1"><br><br>
+        Value 2: <input type="text" id="inp2">
+        <button type="button" onclick="Data()">Get value</button>
+        <p id="ans"></p>
+    </div>
+    <script>
+        let inp1, inp2, p;
+        function Data() {
+            inp1 = document.getElementById("inp1");
+            inp2 = document.getElementById("inp2");
+            // p = document.getElementById(any).innerText;
+            console.log(inp1);
+            // console.log(parseInt(inp1.value)+parseInt(inp2.value));
+        }
+    </script>
+</body>
+</html>
