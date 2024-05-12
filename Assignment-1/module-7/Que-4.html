@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 20px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body style="border: 1px solid red; width: 95%;">
+<body style="border: 1px solid red; width: 90%;">body(great-great-grandparent)
+    <div style="border: 1px solid red; width: 90%;">
+        div(great-grandparent)
+        <ul type="none"; style="border: 1px solid red; width: 80%;">ul(grandparent)
+            <li style="border: 1px solid red; width: 70%;">li(direct parent)</li>
+            <input type="text" name="" id="" placeholder="span" style="border: 1px solid lightgray; width: 70%;">
+        </ul>
+    </div>
+</body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("body").mouseover(function () {
+                $('li').parentsuntil().css({
+                    "border": '1px solid red',
+                    'margin': '2px'
+                });
+            })
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Que-3</title>
+    <style>
+    img{
+      width: 100%;
+    }
+
+  .slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.slide {
+  width: 400px;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.prevBtn,
+.nextBtn {
+  margin-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <h2>Que-3 How to create slider with animation?</h2>
+    <div class="slider">
+        <div class="slides">
+          <div class="slide"><img src="https://t3.ftcdn.net/jpg/05/64/30/58/360_F_564305833_q0VKgmy6Xk7NuX7PLJXswWJuYXwHuM8x.jpg" alt=""></div>
+          <div class="slide"><img src="https://media.istockphoto.com/id/183412466/photo/eastern-bluebirds-male-and-female.jpg?s=612x612&w=0&k=20&c=6_EQHnGedwdjM9QTUF2c1ce7cC3XtlxvMPpU5HAouhc=" alt=""></div>
+          <div class="slide"><img src="https://t4.ftcdn.net/jpg/05/68/43/77/360_F_568437780_r9UEj5OSEYXB6qfVEVaKOfaNGEwArOEn.jpg" alt=""></div>
+        </div>
+        <button class="prevBtn" onclick="prevSlide()">Previous</button>
+        <button class="nextBtn" onclick="nextSlide()">Next</button>
+      </div>
+      <script>
+        let slideIndex = 0;
+
+function showSlide(index) {
+  const slides = document.querySelectorAll('.slide');
+  if (index >= slides.length) { slideIndex = 0; }
+  if (index < 0) { slideIndex = slides.length - 1; }
+  const offset = -slideIndex * slides[0].offsetWidth;
+  document.querySelector('.slides').style.transform = `translateX(${offset}px)`;
+}
+
+function nextSlide() {
+  slideIndex++;
+  showSlide(slideIndex);
+}
+
+function prevSlide() {
+  slideIndex--;
+  showSlide(slideIndex);
+}
+
+setInterval(nextSlide, 3000);
+
+      </script>      
+</body>
+</html>
