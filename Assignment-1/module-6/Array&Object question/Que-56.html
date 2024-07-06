@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-56</title>
+</head>
+
+<body>
+    <h2>Que-56 how many type of JS Event? How to use it ?</h2>
+    <hr>
+    <p>JavaScript events come in several types, categorized based on their origin or source. Here are the main types of
+        JavaScript events:</p>
+    <ol type="1">
+        <li>Mouse Events: These events occur when a user interacts with the mouse. Examples include click, mouseover,
+            mouseout, etc.</li>
+        <li>Keyboard Events: These events occur when the user interacts with the keyboard. Examples include keydown,
+            keyup, keypress.</li>
+        <li>Form Events: These events are related to HTML form elements. Examples include submit, reset, change, focus,
+            blur.</li>
+        <li>Document/Window Events: These events are related to the loading and unloading of the document or the browser
+            window. Examples include load, resize, scroll, unload.</li>
+        <li>Event Delegation Events: These events allow handling events on multiple elements using event delegation
+            techniques. Examples include delegate, undelegate.</li>
+    </ol>
+    <p>To use these events in JavaScript, you typically attach event listeners to elements in your HTML document. Here’s
+        a basic example:</p>
+        <button id="myButton">Click Me!</button>
+    <script>
+        document.getElementById('myButton').addEventListener('click', function (event) {
+            document.write('Button clicked!');
+        });
+
+    </script>
+</body>
+
+</html>

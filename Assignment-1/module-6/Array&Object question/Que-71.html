@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-71</title>
+</head>
+
+<body>
+    <h2>Que-71 How to read and write a file using JavaScript?</h2>
+    <hr>
+    <p>In JavaScript, when working with files, you typically interact with files on the client-side (in web browsers) or
+        on the server-side (using Node.js). Here’s how you can read and write files in both environments: </p>
+    <h3>Reading and Writing Files in a Web Browser (Client-Side):</h3>
+    <input type="file" onchange="readFile(this)">
+    <script>
+        function readFile(input) {
+            let file = input.files[0];
+            let reader = new FileReader();
+
+            reader.onload = function (e) {
+                let contents = e.target.result;
+                console.log(contents);
+            };
+
+            reader.readAsText(file);
+        }
+    </script>
+    <h3>Reading and Writing Files in Node.js (Server-Side):</h3>
+    <input type="file" id="fileInput">
+    <div id="fileContents"></div>
+
+    <script>
+        document
+            .getElementById('fileInput')
+            .addEventListener('change', function (event) {
+                var file = event.target.files[0];
+                var reader = new FileReader();
+
+                reader.onload = function (event) {
+                    var arrayBuffer = event.target.result;
+                    var array = new Uint8Array(arrayBuffer);
+                    var fileSize = arrayBuffer.byteLength;
+                    var bytes = [];
+                    for (var i = 0; i < Math.min(20, fileSize); i++) {
+                        bytes.push(array[i]);
+                    }
+
+                    document
+                        .getElementById('fileContents')
+                        .textContent = 'First 20 bytes of file as ArrayBuffer: ' + bytes.join(', ');
+                    console.log('ArrayBuffer:', arrayBuffer);
+                };
+
+                reader.readAsArrayBuffer(file);
+            });
+    </script>
+    <h3>Writing Files:</h3>
+    <script>
+const fs = require('fs');
+
+const data = 'Hello, this is a sample text.';
+
+fs.writeFile('output.txt', data, (err) => {
+  if (err) {
+    console.error('Error writing to file', err);
+  } else {
+    console.log('File written successfully');
+  }
+});
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+<h2>Que-46 Write a JavaScript program to clone an array?</h2>
+<hr>
+<p>Check console.</p>
+<script>
+    function cloneArray(arr) {
+  return [...arr];
+}
+let originalArray = [1, 2, 3, 4, 5];
+let clonedArray = cloneArray(originalArray);
+clonedArray.push(6);
+console.log("Original Array:", originalArray); 
+console.log("Cloned Array:", clonedArray);     
+</script>

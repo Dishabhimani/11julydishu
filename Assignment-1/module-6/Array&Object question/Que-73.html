@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-73</title>
+</head>
+<body>
+    <h2>Que-73 What is the function of the delete operator?</h2>
+    <hr>
+    <p>The delete operator in JavaScript is used to remove a property from an object. If the property is successfully deleted, the delete operator returns true; otherwise, it returns false. It is important to note that the delete operator only works on object properties and has no effect on variables or functions.</p>
+    <h3>Example:</h3>
+    <h4>Check console.</h4>
+
+    <script>
+        const obj = {
+  name: 'Yashvi',
+  age: 20,
+  job: 'Developer'
+};
+
+console.log(obj); 
+delete obj.age;
+
+console.log(obj);
+
+    </script>
+</body>
+</html>

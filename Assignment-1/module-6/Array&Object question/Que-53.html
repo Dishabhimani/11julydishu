@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-53</title>
+</head>
+<body>
+    <h2>Que-53 Form Validtion in JS?</h2>
+    <hr>
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <span id="nameError" class="error"></span><br><br>
+    
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <span id="emailError" class="error"></span><br><br>
+    
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age">
+        <span id="ageError" class="error"></span><br><br>
+    
+        <button type="submit">Submit</button>
+      </form>
+      <!-- script.js -->
+<script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  clearErrors();
+  let isValid = true;
+  const name = document.getElementById('name').value;
+  if (name === '') {
+    showError('nameError', 'Name is required');
+    isValid = false;
+  }
+  const email = document.getElementById('email').value;
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (email === '') {
+    showError('emailError', 'Email is required');
+    isValid = false;
+  } else if (!emailPattern.test(email)) {
+    showError('emailError', 'Invalid email format');
+    isValid = false;
+  }
+  const age = document.getElementById('age').value;
+  const agePattern = /^\d+$/;
+  if (age === '') {
+    showError('ageError', 'Age is required');
+    isValid = false;
+  } else if (!agePattern.test(age)) {
+    showError('ageError', 'Age must be a number');
+    isValid = false;
+  } else if (parseInt(age) < 1 || parseInt(age) > 120) {
+    showError('ageError', 'Age must be between 1 and 120');
+    isValid = false;
+  }
+
+  if (isValid) {
+    alert('Form submitted successfully!');
+  }
+});
+
+function showError(elementId, message) {
+  document.getElementById(elementId).innerText = message;
+}
+
+function clearErrors() {
+  document.getElementById('nameError').innerText = '';
+  document.getElementById('emailError').innerText = '';
+  document.getElementById('ageError').innerText = '';
+}
+
+</script>    
+</body>
+</html>

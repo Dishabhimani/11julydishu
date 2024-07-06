@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-80</title>
+    <style>
+        body {
+            background-color: #333;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .slider-container {
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #444;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .arrows {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .arrow {
+            cursor: pointer;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Que-80 Create slider using JavaScript.</h2>
+    <hr>
+    <h1>Simple JavaScript Slider</h1>
+    <p>Created by Dropinks</p>
+    <div class="slider-container">
+        <div class="slider" id="slider">
+            <div class="slide"  style="background-color: yellow; padding: 50px; height: 500px;"></div>
+            <div class="slide" style="background-color: red;"></div>
+            <div class="slide" style="background-color: blue;"></div>
+            <div class="slide" style="background-color: green;"></div>
+            <div class="slide" style="background-color: purple;"></div>
+        </div>
+    </div>
+    <div class="arrows">
+        <div class="arrow" id="prev">&larr;</div>
+        <div class="arrow" id="next">&rarr;</div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+
+        const slider = document.getElementById('slider');
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        document.getElementById('next').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlider();
+        });
+
+        document.getElementById('prev').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        });
+
+        function updateSlider() {
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+    </script>
+</body>
+</html>

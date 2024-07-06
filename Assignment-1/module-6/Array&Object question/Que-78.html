@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-78</title>
+    <style>
+         .container {
+            border: 1px solid black;
+            padding: 20px;
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .input-box {
+            margin-bottom: 10px;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+        .buttons button {
+            margin: 5px;
+        }
+        .result {
+            margin-top: 10px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Que-78 Create basic math operation in JS</h2>
+    <hr>
+    <div class="container">
+        <h2>Maths Operations</h2>
+        <div class="input-box">
+            <label>Enter 1st number :</label>
+            <input type="number" id="num1" />
+        </div>
+        <div class="input-box">
+            <label>Enter 2nd number :</label>
+            <input type="number" id="num2" />
+        </div>
+        <div class="buttons">
+            <button onclick="calculate('+')">+</button>
+            <button onclick="calculate('-')">-</button>
+            <button onclick="calculate('*')">*</button>
+            <button onclick="calculate('/')">/</button>
+            <button onclick="calculate('%')">%</button>
+        </div>
+        <div class="result">
+            Answer is : <span id="result">0</span>
+        </div>
+    </div>
+
+    <script>
+        function calculate(operation) {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var result;
+
+            switch(operation) {
+                case '+':
+                    result = num1 + num2;
+                    break;
+                case '-':
+                    result = num1 - num2;
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    break;
+                case '/':
+                    result = num1 / num2;
+                    break;
+                case '%':
+                    result = num1 % num2;
+                    break;
+                default:
+                    result = 'Invalid Operation';
+            }
+
+            document.getElementById('result').innerText = result;
+        }
+    </script>
+</body>
+</html>

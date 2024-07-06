@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-70</title>
+    <style>
+        .mystyle {
+            width: 100%;
+            padding: 25px;
+            background-color: coral;
+            color: white;
+            font-size: 25px;
+            box-sizing: border-box;
+        }
+
+        .demo {
+            width: 100%;
+            padding: 25px;
+            background-color: rgb(244, 182, 159);
+            color: white;
+            font-size: 25px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Que-70 How can the style/class of an element be changed?</h2>
+    <hr>
+    <p>In JavaScript, you can change the style or class of an element dynamically using various methods depending on
+        your specific needs. Here’s how you can manipulate both styles and classes:</p>
+    <h3>Changing Style:</h3>
+    <h4>Direct Style Manipulation:</h4>
+    <h3>Example:</h3>
+    <p id="myElement">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, quis!</p>
+    <script>
+        let element = document.getElementById('myElement');
+        element.style.backgroundColor = 'lightblue';
+        element.style.fontSize = '20px';
+
+    </script>
+    <h3>Changing Class:</h3>
+    <h4>Removing Classes:</h4>
+    <h3>Example:</h3>
+    <p>Click the "Try it" button to remove the "mystyle" class from the DIV element:</p>
+
+    <button onclick="myFunction()">Remove</button>
+
+    <div id="myDIV" class="mystyle">
+        This is a DIV element.
+    </div>
+    <script>
+        function myFunction() {
+            var element = document.getElementById("myDIV");
+            element.classList.remove("mystyle");
+        }
+
+    </script>
+    <h4>Adding class:</h4>
+    <h3>Example:</h3>
+    <p>Click the "Try it" button to remove the "mystyle" class from the DIV element:</p>
+
+    <button onclick="myFunction2()">Add</button>
+
+    <div id="myDIV2" class="demo">
+        <script>
+            function myFunction2() {
+                var element = document.getElementById("myDIV2");
+                element.classList.remove("demo");
+            }
+        </script>
+
+</body>
+
+</html>

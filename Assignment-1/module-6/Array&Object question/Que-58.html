@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-58</title>
+</head>
+
+<body>
+    <h2>Que-58 Array vs object defences in JS? </h2>
+    <hr>
+    <P>In JavaScript, "array" and "object" are both fundamental data structures, but they serve different purposes and
+        have different characteristics:</P>
+    <h3>Array:</h3>
+    <li>Ordered Collection: Arrays are ordered collections of data where each element is identified by an index
+        (starting from 0).</li>
+    <li>Homogeneous: Arrays typically store elements of the same type (though JavaScript allows mixed types).</li>
+    <li>Methods: Arrays come with built-in methods like push, pop, shift, unshift, splice, etc., for manipulating data.
+    </li>
+    <li>Iteration: They are usually iterated over using loops or array methods like forEach, map, filter, etc.</li>
+    <h3>Example:</h3>
+    <p id="demo"></p>
+    <script>
+const cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+
+    </script>
+    <h3>Object:</h3>
+    <li>Key-Value Pairs: Objects are collections of key-value pairs where each key is unique.</li>
+    <li>Unordered: The order of properties in an object is not guaranteed.</li>
+    <li>Properties: Besides storing data, objects can also contain methods (functions defined as object properties).</li>
+    <li>Access: Properties of an object are accessed using dot notation (object.property) or bracket notation (object['property']).</li>
+    <h3>Example:</h3>
+    <p id="demo"></p>
+    <!-- <script>
+        const person = {};
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue"; 
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+    </script> -->
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-67</title>
+</head>
+
+<body>
+    <h2>Que-67 Write the code for adding new elements dynamically?</h2>
+    <hr>
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <button onclick="addElement()">Add New Item</button>
+
+    <script>
+        function addElement() {
+            let newItem = document.createElement('li');
+            newItem.textContent = 'New Item';
+            document.getElementById('myList').appendChild(newItem);
+        }
+    </script>
+</body>
+
+</html>

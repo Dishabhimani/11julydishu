@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-76</title>
+</head>
+<body>
+    <h2>Que-76 What are the disadvantages of using innerHTML in JavaScript?</h2>
+    <hr>
+    <h3>1.Security Risks (Cross-Site Scripting):</h3>
+    <li>When you set innerHTML with user-supplied content or unsanitized data, it can lead to Cross-Site Scripting attacks. This can allow attackers to inject malicious scripts into your web page, which can compromise user data and application security.</li>
+    <h3>2.Performance Issues:</h3>
+    <li>Setting innerHTML can be inefficient, especially for large content changes. It replaces the entire content of an element, causing the browser to re-parse and re-render the new HTML, which can be slow for complex DOM trees.</li>
+    <li>Frequent use of innerHTML in performance-critical applications can lead to a noticeable slowdown.</li>
+    <h3>3.Loss of Event Handlers:</h3>
+    <li>When you use innerHTML to replace content that contains elements with attached event listeners, those event listeners are removed and will need to be reattached manually.</li>
+    <h3>4.Readability and Maintainability:</h3>
+    <li>Extensive use of innerHTML for inserting or manipulating large chunks of HTML can make your code harder to read and maintain. It can be difficult to track where and how the DOM is being modified, especially in larger codebases.</li>
+</body>
+</html>

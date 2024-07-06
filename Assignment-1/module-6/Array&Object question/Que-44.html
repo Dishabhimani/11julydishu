@@ -1,0 +1,16 @@
+<h2>Que-44 Write a JavaScript program to capitalize first letter of a string?</h2>
+<hr>
+<script>
+    function capitalizeFirstLetter(str) {
+  if (str.length === 0) {
+    return "";
+  }
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+let inputString = "hello world";
+let capitalizedString = capitalizeFirstLetter(inputString);
+
+document.write("Original string: " + inputString);
+document.write("Capitalized string: " + capitalizedString);
+
+</script>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Que-54</title>
+  <style>
+    .error { color: red; }
+  </style>
+</head>
+<body>
+    <h2>Que-54 Form in Email, number, Password, Validation?</h2>
+    <hr>
+  <form id="myForm">
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email">
+    <span id="emailError" class="error"></span><br><br>
+
+    <label for="number">Number:</label>
+    <input type="text" id="number" name="number">
+    <span id="numberError" class="error"></span><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <span id="passwordError" class="error"></span><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  clearErrors();
+  let isValid = true;
+  const email = document.getElementById('email').value;
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (email === '') {
+    showError('emailError', 'Email is required');
+    isValid = false;
+  } else if (!emailPattern.test(email)) {
+    showError('emailError', 'Invalid email format');
+    isValid = false;
+  }
+
+  const number = document.getElementById('number').value;
+  const numberPattern = /^\d+$/;
+  if (number === '') {
+    showError('numberError', 'Number is required');
+    isValid = false;
+  } else if (!numberPattern.test(number)) {
+    showError('numberError', 'Number must be a valid numeric value');
+    isValid = false;
+  }
+
+  const password = document.getElementById('password').value;
+  if (password === '') {
+    showError('passwordError', 'Password is required');
+    isValid = false;
+  } else if (password.length < 8) {
+    showError('passwordError', 'Password must be at least 8 characters long');
+    isValid = false;
+  }
+  if (isValid) {
+    alert('Form submitted successfully!');
+  }
+});
+
+function showError(elementId, message) {
+  document.getElementById(elementId).innerText = message;
+}
+function clearErrors() {
+  document.getElementById('emailError').innerText = '';
+  document.getElementById('numberError').innerText = '';
+  document.getElementById('passwordError').innerText = '';
+}
+
+  </script>
+</body>
+</html>

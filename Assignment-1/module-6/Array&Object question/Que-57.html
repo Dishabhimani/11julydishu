@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-57</title>
+</head>
+<body>
+    <h2>Que-57 What is Bom vs Dom in JS?</h2>
+    <hr>
+    <h3>DOM (Document Object Model):</h3>
+    <li>The DOM represents the structure of an HTML or XML document as a hierarchical tree of objects. Each node in the tree represents a part of the document, such as elements, attributes, and text.</li>
+    <li>It provides a structured representation of the document's content and allows scripts to dynamically access and manipulate the document's elements and attributes.</li>
+    <li>Example operations include selecting elements, modifying their content or attributes, adding or removing elements, and responding to events.</li>
+    <h3>BOM (Browser Object Model):</h3>
+    <li>The BOM represents everything else in the browser environment aside from the document itself. It includes objects such as the window object, which represents the browser window that contains the document.</li>
+    <li>It provides objects and methods to interact with the browser environment, such as navigating to URLs (window.location), managing history (window.history), handling dialogs (window.alert, window.confirm, window.prompt), and timing events (window.setTimeout, window.setInterval).</li>
+    <h3>Example:</h3>
+    <button id="myButton">Click Me!</button>
+    <p id="myParagraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti reprehenderit quasi fugiat perspiciatis fugit ex nihil? Sint odit dolorum ea?</p>
+    <script>
+document.getElementById('myButton').addEventListener('click', function(event) {
+    document.getElementById('myParagraph').textContent = 'Button clicked!';
+});
+window.alert('Hello, world!'); 
+document.write(window.innerWidth); 
+
+    </script>
+</body>
+</html>

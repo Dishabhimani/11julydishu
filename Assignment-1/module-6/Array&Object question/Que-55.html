@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-55</title>
+</head>
+
+<body>
+    <h2>Que-55 Dynamic Form Validation in JS?</h2>
+    <hr>
+    <form id="myForm">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <span id="emailError" class="error"></span><br><br>
+
+        <label for="number">Number:</label>
+        <input type="text" id="number" name="number">
+        <span id="numberError" class="error"></span><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <span id="passwordError" class="error"></span><br><br>
+
+        <button type="submit">Submit</button>
+
+        <script>
+            document.getElementById('email').addEventListener('input', validateEmail);
+            document.getElementById('number').addEventListener('input', validateNumber);
+            document.getElementById('password').addEventListener('input', validatePassword);
+
+            document.getElementById('myForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                clearErrors();
+
+                let isValid = true;
+
+                if (!validateEmail()) isValid = false;
+                if (!validateNumber()) isValid = false;
+                if (!validatePassword()) isValid = false;
+
+                if (isValid) {
+                    alert('Form submitted successfully!');
+                    // You can submit the form or handle it as per your needs here
+                }
+            });
+
+            function validateEmail() {
+                const email = document.getElementById('email').value;
+                const emailError = document.getElementById('emailError');
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                if (email === '') {
+                    showError(emailError, 'Email is required');
+                    return false;
+                } else if (!emailPattern.test(email)) {
+                    showError(emailError, 'Invalid email format');
+                    return false;
+                } else {
+                    showValid(emailError, 'Valid email');
+                    return true;
+                }
+            }
+
+            function validateNumber() {
+                const number = document.getElementById('number').value;
+                const numberError = document.getElementById('numberError');
+                const numberPattern = /^\d+$/;
+
+                if (number === '') {
+                    showError(numberError, 'Number is required');
+                    return false;
+                } else if (!numberPattern.test(number)) {
+                    showError(numberError, 'Number must be a valid numeric value');
+                    return false;
+                } else {
+                    showValid(numberError, 'Valid number');
+                    return true;
+                }
+            }
+
+            function validatePassword() {
+                const password = document.getElementById('password').value;
+                const passwordError = document.getElementById('passwordError');
+
+                if (password === '') {
+                    showError(passwordError, 'Password is required');
+                    return false;
+                } else if (password.length < 8) {
+                    showError(passwordError, 'Password must be at least 8 characters long');
+                    return false;
+                } else {
+                    showValid(passwordError, 'Valid password');
+                    return true;
+                }
+            }
+
+            function showError(element, message) {
+                element.classList.remove('valid');
+                element.classList.add('error');
+                element.innerText = message;
+            }
+
+            function showValid(element, message) {
+                element.classList.remove('error');
+                element.classList.add('valid');
+                element.innerText = message;
+            }
+
+            function clearErrors() {
+                document.getElementById('emailError').innerText = '';
+                document.getElementById('numberError').innerText = '';
+                document.getElementById('passwordError').innerText = '';
+            }
+
+        </script>
+</body>
+
+</html>

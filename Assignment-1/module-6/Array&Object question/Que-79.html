@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-79</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            padding: 20px;
+            width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .marks-input {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .marks-input label {
+            display: inline-block;
+            width: 150px;
+        }
+        .result-box {
+            margin-top: 20px;
+        }
+        .result {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Que-79 Create result.</h2>
+    <hr>
+    <div class="container">
+        <h2>Marksheet for Information Technology</h2>
+        <h3>Enter Marks</h3>
+        <div class="marks-input">
+            <label>1. C Language</label>
+            <input type="number" id="mark1" /><br>
+            <label>2. C++ Language</label>
+            <input type="number" id="mark2" /><br>
+            <label>3. Database</label>
+            <input type="number" id="mark3" /><br>
+            <label>4. HTML</label>
+            <input type="number" id="mark4" /><br>
+            <label>5. CSS</label>
+            <input type="number" id="mark5" /><br>
+            <label>6. php</label>
+            <input type="number" id="mark6" /><br>
+            <label>7. Core java</label>
+            <input type="number" id="mark7" /><br>
+        </div>
+        <button onclick="calculateResult()">Result</button>
+        <div class="result-box">
+            Total is : <span id="total" class="result">0</span> / 350<br>
+            Percentage is : <span id="percentage" class="result">0</span> %
+        </div>
+    </div>
+
+    <script>
+        function calculateResult() {
+            var mark1 = parseFloat(document.getElementById('mark1').value) || 0;
+            var mark2 = parseFloat(document.getElementById('mark2').value) || 0;
+            var mark3 = parseFloat(document.getElementById('mark3').value) || 0;
+            var mark4 = parseFloat(document.getElementById('mark4').value) || 0;
+            var mark5 = parseFloat(document.getElementById('mark5').value) || 0;
+            var mark6 = parseFloat(document.getElementById('mark6').value) || 0;
+            var mark7 = parseFloat(document.getElementById('mark7').value) || 0;
+
+            var total = mark1 + mark2 + mark3 + mark4 + mark5 + mark6 + mark7;
+            var percentage = (total / 350) * 100;
+
+            document.getElementById('total').innerText = total;
+            document.getElementById('percentage').innerText = percentage.toFixed(2);
+        }
+    </script>
+</body>
+</html>
