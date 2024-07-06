@@ -1,0 +1,15 @@
+<h2>Que-36 Write a program you have to make a summation of first and last Digit. (E.g., 1234 Ans:- 5) in JS?</h2>
+<hr>
+<script>
+    function sumFirstAndLastDigit(number) {
+  let num = number.toString();
+  let firstDigit = parseInt(num.charAt(0), 10);
+  
+  let lastDigit = parseInt(num.charAt(num.length - 1), 10);
+  let sum = firstDigit + lastDigit;
+  return sum;
+}
+let number = 7899534;
+document.write("Sum of first and last digit of " + number + " is: " + sumFirstAndLastDigit(number));
+
+</script>

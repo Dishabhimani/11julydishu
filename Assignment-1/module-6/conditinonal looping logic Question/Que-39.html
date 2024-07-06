@@ -1,0 +1,39 @@
+<h2>Que-40 Accept 3 numbers from user using while loop and check each numbers palindrome?</h2>
+<hr>
+<script>
+    function isPalindrome(number) {
+  let numStr = number.toString();
+  let len = numStr.length;
+  for (let i = 0; i < Math.floor(len / 2); i++) {
+    if (numStr[i] !== numStr[len - 1 - i]) {
+      return false;
+    }
+  }
+  return true;
+}
+
+function checkPalindromes() {
+  let count = 1;
+  let numbers = [];
+  while (count <= 3) {
+    let input = prompt("Enter number " + count + ":");
+    let num = parseInt(input, 10);
+    
+    if (num) {
+      numbers.push(num);
+      count++;
+    } else {
+     document.write("Invalid input. Please enter a valid number.");
+    }
+  }
+  for (let number of numbers) {
+    if (isPalindrome(number)) {
+     document.write(number + " is a palindrome.");
+    } else {
+     document.write(number + " is not a palindrome.");
+    }
+  }
+}
+checkPalindromes();
+
+</script>

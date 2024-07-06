@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-32</title>
+</head>
+
+<body>
+    <h2>Que-32 Write to print factorial of given number?</h2>
+    <hr>
+    <script>
+        function factorial(n) {
+            if (n < 0) {
+                return "Factorial is not defined for negative numbers.";
+            }
+            let result = 1;
+            for (let i = 1; i <= n; i++) {
+                result *= i;
+            }
+            return result;
+        }
+        let number = 5;
+      document.write("Factorial of " + number + " is " + factorial(number));
+
+    </script>
+</body>
+
+</html>
