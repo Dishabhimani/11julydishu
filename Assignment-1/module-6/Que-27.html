@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-27</title>
+</head>
+<body>
+    <h2>Que-27 Write to find minimum number among 3 numbers using ternary operator in JS.</h2>
+    <hr>
+    <script>
+        let num1 = parseFloat(prompt("Enter the first number:"));
+        let num2 = parseFloat(prompt("Enter the second number:"));
+        let num3 = parseFloat(prompt("Enter the third number:"));
+        let min = (num1 <= num2 && num1 <= num3) ? num1 : (num2 <= num3 ? num2 : num3);
+        document.write(`The minimum number among ${num1}, ${num2}, and ${num3} is: ${min}`);
+    </script>
+</body>
+
+</html>

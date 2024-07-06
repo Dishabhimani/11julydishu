@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-4</title>
+</head>
+<body>
+    <h2>Que-4 Write a mul Function Which will Work Properly When invoked With Following Syntax.</h2><hr>
+    function mul(x) { <br> 
+        return function(y) { <br> 
+            return function(z) { <br> 
+            return x*y*z; <br> 
+            }; <br> 
+        } <br> 
+        } <br> 
+        
+        document.write(mul(2)(3)(5));<br> Multiplication is: 
+    <script> 
+        function mul(x) { 
+        return function(y) { 
+            return function(z) { 
+            return x*y*z; 
+            }; 
+        } 
+        } 
+        
+        document.write(mul(2)(3)(5)); 
+    </script>
+    
+</body>
+</html>

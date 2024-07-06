@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-12</title>
+</head>
+<body>
+    <h2>Que-12 WAP to convert years into days and days into years?</h2><hr>
+
+    <script>
+function yearsToDays(years) {
+    const daysInYear = 365;
+    return years * daysInYear;
+}
+
+function daysToYears(days) {
+    const daysInYear = 365;
+    return days / daysInYear;
+}
+
+// Example usage:
+let years = 2;
+let days = 730;
+
+document.write(years + " years is equal to " + yearsToDays(years) + " days.");
+document.write(days + " days is equal to " + daysToYears(days) + " years.");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-23</title>
+</head>
+<body>
+    <h2>Que-23 Find the Character Is Vowel or Not ?</h2>
+    <hr>
+    <script>
+        function isVowel(char) {
+            char = char.toLowerCase();
+            var vowels = ['a', 'e', 'i', 'o', 'u'];
+            return vowels.includes(char);
+        }
+
+        var userInput = prompt("Please enter a character:");
+        if (userInput.length === 1) {
+            if (isVowel(userInput)) {
+                console.log(userInput + " is a vowel.");
+                alert(userInput + " is a vowel.");
+            } else {
+                console.log(userInput + " is not a vowel.");
+                alert(userInput + " is not a vowel.");
+            }
+        } else {
+            console.log("Invalid input. Please enter a single character.");
+            alert("Invalid input. Please enter a single character.");
+        }
+    </script>
+
+</body>
+</html>

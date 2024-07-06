@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-29</title>
+</head>
+
+<body>
+    <h2>Que-29 Write to show
+        <ol type="i">
+            <li>Monday to Sunday using switch case in JS?</li>
+            <li>Vowel or Consonant using switch case in JS? </li>
+        </ol>
+    </h2>
+    <hr>
+    <h3>Monday to sunday</h3>
+    <script>
+        let day = new Date().getDay();
+        let dayName;
+
+        switch (day) {
+            case 0:
+                dayName = "Sunday";
+                break;
+            case 1:
+                dayName = "Monday";
+                break;
+            case 2:
+                dayName = "Tuesday";
+                break;
+            case 3:
+                dayName = "Wednesday";
+                break;
+            case 4:
+                dayName = "Thursday";
+                break;
+            case 5:
+                dayName = "Friday";
+                break;
+            case 6:
+                dayName = "Saturday";
+                break;
+            default:
+                dayName = "Invalid day";
+        }
+
+        document.write("Today is " + dayName);
+
+    </script>
+    <h3>Vowel or Consonant</h3>
+    <script>
+        function check(char) {
+    switch (char) {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+            document.write(char + " is a vowel.");
+            break;
+        default:
+            document.write(char + " is a consonant.");
+    }
+}
+check('a');  
+check('b');  
+check('e');  
+check('z');
+
+    </script>
+</body>
+
+</html>

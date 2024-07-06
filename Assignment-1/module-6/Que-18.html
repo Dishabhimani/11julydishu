@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-18</title>
+</head>
+
+<body>
+    <h2>Que-18 What is a Loop and Switch Case in JavaScript define that ? </h2><hr>
+    <p>
+        In JavaScript, loops and switch cases are fundamental control flow structures used to execute code repetitively
+        or conditionally.
+    <h3>Loop</h3>
+    A loop is used to execute a block of code repeatedly, based on a condition. JavaScript provides several types of
+    loops:
+    <h4>1.for loop:</h4>
+    The for loop is used when the number of iterations is known beforehand.
+    <h3>Exapmle:</h3>
+    for (let i = 0; i < 5; i++) { console.log(i); } 
+    <h4>2.While loop:</h4>
+    The while loop continues to execute a block of code as long as the specified condition evaluates to true.
+    <h3>Example:</h3>
+    let i = 0;
+    while (i < 5) { console.log(i); i++; } 
+    <h4>3.do...while loop:</h4>
+    The do...while loop is similar to the while loop, but it ensures that the code block is executed at least once before checking the condition.
+    <h3>Example:</h3>
+    let i = 0;
+do {
+    console.log(i);
+    i++;
+} while (i < 5);
+    <h4>4.for...in loop:</h4>
+    The for...in loop iterates over the enumerable properties of an object.
+    <h3>Example:</h3>
+    const person = { name: "John", age: 30, city: "New York" };
+for (let key in person) {
+    console.log(key + ": " + person[key]);
+}
+    <h4>5.for...of loop:</h4>
+    The for...of loop iterates over iterable objects like arrays, strings, etc.
+    <h3>Exmaple:</h3>
+    const array = [1, 2, 3, 4, 5];
+for (let value of array) {
+    console.log(value);
+}
+<h3>Switch Case</h3>
+The switch statement evaluates an expression and executes the corresponding case block based on the expression's value. It is an alternative to using multiple if...else if statements.
+<h3>Example:</h3>
+const fruit = 'apple';
+
+switch (fruit) {
+    case 'banana':
+        console.log('Banana is yellow.');
+        break;
+    case 'apple':
+        console.log('Apple is red.');
+        break;
+    case 'orange':
+        console.log('Orange is orange.');
+        break;
+    default:
+        console.log('Unknown fruit.');
+}
+<li>Expression: The value of the expression is compared with the values of each case.</li>
+<li>case: Each case specifies a value to compare with the expression. If the expression matches the value, the associated block of code is executed.</li>
+<li>break: The break statement is used to terminate the current case and exit the switch statement.</li>
+<li>default: The default case is executed if none of the case values match the expression.</li>
+</p>
+</body>
+
+</html>

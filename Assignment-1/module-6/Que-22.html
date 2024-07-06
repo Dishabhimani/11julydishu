@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-22</title>
+</head>
+<body>
+    <h2>Que-22 Check Number Is Positive or Negative in JavaScript?</h2>
+    <hr>
+    <script>
+        function checkNumber(num) {
+            if (num > 0) {
+                console.log(num + " is a positive number.");
+                alert(num + " is a positive number.");
+            } else if (num < 0) {
+                console.log(num + " is a negative number.");
+                alert(num + " is a negative number.");
+            } else {
+                console.log(num + " is zero.");
+                alert(num + " is zero.");
+            }
+        }
+        var userInput = prompt("Please enter a number:");
+        var number = parseFloat(userInput);
+        if (number){
+            checkNumber(number);
+        } else {
+            console.log("Invalid input. Please enter a valid number.");
+            alert("Invalid input. Please enter a valid number.");
+        }
+    </script>
+
+</body>
+</html>

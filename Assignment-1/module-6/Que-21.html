@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que-20</title>
+</head>
+
+<body>
+    <h2>Que-20 What is the difference between && and || in JavaScript?</h2>
+    <hr>
+    <p>In JavaScript, && (logical AND) and || (logical OR) are logical operators used to combine multiple boolean
+        expressions or values.</p>
+    <h3>Logical AND (&&)</h3>
+    <p>The && operator returns true only if both operands are true. If any operand is false, the result is false.
+    </p>
+    <h4>Syntax:</h4>
+    <p>expr1 && expr2</p>
+    <li>If expr1 is false, expr1 is returned.</li>
+    <li>If expr1 is true, expr2 is evaluated and its value is returned.</li>
+    <h3>Example:</h3>
+    <script>
+        console.log(true && true);
+        console.log(true && false); 
+    </script>
+    <h3>Logical OR (||)</h3>
+    <p>The || operator returns true if at least one of the operands is true. If both operands are false, the result is false.</p>
+    <h4>Syntax:</h4>
+    <p>expr1 || expr2</p>
+    <li>If expr1 is true, expr1 is returned.</li>
+    <li>If expr1 is false, expr2 is evaluated and its value is returned.</li>
+    <h3>Example:</h3>
+    <script>
+        console.log(true || true);    
+        console.log(false || false);
+    </script>
+    <h3>Key Difference:</h3>
+    <h4>1.Evaluation Logic:</h4>
+    <li>&& returns true only if both operands are true.</li>
+    <li>|| returns true if at least one operand is true.</li>
+    <h4>2.Short-Circuit Evaluation:</h4>
+    <li>&& stops evaluating and returns the first false operand.</li>
+    <li>|| stops evaluating and returns the first true operand.</li>
+    <h4>3.Return Value:</h4>
+    <li>&& returns the last evaluated value if all are true, otherwise the first false value.</li>
+    <li>|| returns the first true value if any, otherwise the last evaluated value if all are false.</li>
+</body>
+
+</html>
